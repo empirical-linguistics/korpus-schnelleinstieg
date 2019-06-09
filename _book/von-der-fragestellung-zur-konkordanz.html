@@ -33,7 +33,7 @@
   
   
 <link rel="prev" href="index.html">
-
+<link rel="next" href="von-der-konkordanz-zur-analyse.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -74,6 +74,9 @@
 <li class="chapter" data-level="2.2.3.2" data-path="von-der-fragestellung-zur-konkordanz.html"><a href="von-der-fragestellung-zur-konkordanz.html#import-in-calc"><i class="fa fa-check"></i><b>2.2.3.2</b> Import in Calc</a></li>
 </ul></li>
 </ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="von-der-konkordanz-zur-analyse.html"><a href="von-der-konkordanz-zur-analyse.html"><i class="fa fa-check"></i><b>3</b> Von der Konkordanz zur Analyse</a><ul>
+<li class="chapter" data-level="3.1" data-path="von-der-konkordanz-zur-analyse.html"><a href="von-der-konkordanz-zur-analyse.html#annotation"><i class="fa fa-check"></i><b>3.1</b> Annotation</a></li>
 </ul></li>
 </ul>
 
@@ -124,13 +127,18 @@
 <h3><span class="header-section-number">2.2.1</span> Suchsyntax</h3>
 <p>Für die Datenerhebung verwenden wir das DWDS-Kernkorpus des 20. Jahrhunderts, das über <a href="https://www.dwds.de/" target="_blank">dwds.de</a> zugänglich ist. Wir suchen auf der Wortebene mit Hilfe von regulären Ausdrücken nach den Formen <em>programmiert</em> und <em>vorprogrammiert</em>. Dafür benutzen wir den Suchstring <code>@programmiert || @vorprogrammiert</code>. Das @-Zeichen bedeutet, dass wir genau diese Strings suchen und keine anderen Wortformen wie <em>programmierte</em>, <em>programmiertes</em> etc. Da uns nur die prädikative Verwendung interessiert, brauchen wir die flektierten Wortformen nicht. Der horizontale Strich | ist der ODER-Operator; dass man ihn hier doppelt setzen muss, ist eine Besonderheit der DWDS-Suchsyntax.</p>
 <p><details><summary>‣ <strong>Alternative Suchabfrage mit regulären Ausdrücken</strong></summary> Alternativ können wir das gleiche Ergebnis auch durch Verwendug regulärer Ausdrücke erzielen: <code>$w=/(vor)?programmiert/g</code>. Ich ermutige alle, die sich mit Korpuslinguistik beschäftigen wollen, sehr, sich mit regulären Ausdrücken vertraut zu machen. Allerdings unterstützt die DWDS-Suchsyntax reguläre Ausdrücke derzeit nur in sehr beschränktem Maße. (Deutlich besser ist in dieser Hinsicht das alternative Abfrageportal <a href="https://kaskade.dwds.de/dstar/" target="_blank">Dstar</a>, das jedoch für Anfänger*innen nur bedingt geeignet ist.)</details></p>
-<p><details> <summary>Zur Suche im DWDS und anderswo</summary> - Die Hilfe zur Suche im DWDS findet sich <a href="https://www.dwds.de/d/suche" target="_blank">hier</a>. - Einen Einstieg in reguläre Ausdrücke bietet z.B. <a href="https://www.regular-expressions.info/" target="_blank">regular-expressions.info</a>. - In den <a href="https://hartmast.github.io/sprachgeschichte/" target="_blank">Begleitmaterialien</a> zu meiner “Deutschen Sprachgeschichte” finden sich ebenfalls einige Tutorials zur Suche in einschlägigen Korpora. - Sehr empfehlenswert und erfreulich ausführlich ist außerdem die <a href="https://www.bubenhofer.com/korpuslinguistik/kurs/index.php?id=uebersicht.html" target="_blank">Korpuslinguistik-Seite von Noah Bubenhofer.</a> </details></p>
+<p><details> <summary>‣ <strong>Zur Suche im DWDS und anderswo</strong></summary> - Die Hilfe zur Suche im DWDS findet sich <a href="https://www.dwds.de/d/suche" target="_blank">hier</a>.</p>
+<ul>
+<li><p>Einen Einstieg in reguläre Ausdrücke bietet z.B. <a href="https://www.regular-expressions.info/" target="_blank">regular-expressions.info</a>.</p></li>
+<li><p>In den <a href="https://hartmast.github.io/sprachgeschichte/" target="_blank">Begleitmaterialien</a> zu meiner “Deutschen Sprachgeschichte” finden sich ebenfalls einige Tutorials zur Suche in einschlägigen Korpora.</p></li>
+<li><p>Sehr empfehlenswert und erfreulich ausführlich ist außerdem die <a href="https://www.bubenhofer.com/korpuslinguistik/kurs/index.php?id=uebersicht.html" target="_blank">Korpuslinguistik-Seite von Noah Bubenhofer.</a> </details></p></li>
+</ul>
 </div>
 <div id="export" class="section level3">
 <h3><span class="header-section-number">2.2.2</span> Export</h3>
 <p>Die Suche liefert uns 88 Treffer, die nun im Browser in ihrem jeweiligen Kontext dargestellt werden. Diese Daten wollen wir nun exportieren, und zwar im “Key Word in Context” (KWIC)-Format. Damit ist gemeint, dass der Suchtreffer zusammen mit seinem unmittelbaren Kontext dargestellt wird. Erfreulicherweise bietet das DWDS eine sehr gute Exportfunktion, die es erlaubt, Daten im CSV-Format zu speichern.</p>
 <div class="figure"><span id="fig:dwdsexp"></span>
-<img src="fig/dwdsdownload.gif" alt="Export aus dem DWDS"  />
+<img src="figs/dwdsdownload.gif" alt="Export aus dem DWDS"  />
 <p class="caption">
 Fig. 2.1: Export aus dem DWDS
 </p>
@@ -176,7 +184,7 @@ Fig. 2.4: Import in Excel
 <h4><span class="header-section-number">2.2.3.2</span> Import in Calc</h4>
 <p>Öffnet man die Datei im kostenlosen Tabellenkalkulationsprogramm Calc von LibreOffice (mit Rechtsklick &gt; Öffen mit), so öffnet sich zunächst automatisch der Textimportassistent. Hier muss man Calc mitteilen, welches Format die Datei hat. In unserem Fall ist der Text UTF-8-kodiert, wir haben Kommas als Spaltentrenner und Anführungszeichen als Textqualifizieren, wie in <a href="von-der-fragestellung-zur-konkordanz.html#fig:calcimport">2.5</a>.</p>
 <div class="figure"><span id="fig:calcimport"></span>
-<img src="fig/calc_import.png" alt="Import in Calc" width="40%" height="40%" />
+<img src="fig/calc_import.png" alt="Import in Calc" width="60%" height="60%" />
 <p class="caption">
 Fig. 2.5: Import in Calc
 </p>
@@ -191,8 +199,8 @@ Fig. 2.5: Import in Calc
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="von-der-konkordanz-zur-analyse.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -229,9 +237,9 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["korpus-schnelleinstieg.pdf"],
 "toc": {
-"collapse": "subsection"
+"collapse": null
 }
 });
 });

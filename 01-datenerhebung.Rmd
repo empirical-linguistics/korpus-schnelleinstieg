@@ -45,10 +45,13 @@ Alternativ können wir das gleiche Ergebnis auch durch Verwendug regulärer Ausd
 
 
 <details>
-<summary>Zur Suche im DWDS und anderswo</summary>
+<summary>‣ **Zur Suche im DWDS und anderswo**</summary>
 - Die Hilfe zur Suche im DWDS findet sich <a href="https://www.dwds.de/d/suche" target="_blank">hier</a>.
+
 - Einen Einstieg in reguläre Ausdrücke bietet z.B. <a href="https://www.regular-expressions.info/" target="_blank">regular-expressions.info</a>.
+
 - In den <a href="https://hartmast.github.io/sprachgeschichte/" target="_blank">Begleitmaterialien</a> zu meiner "Deutschen Sprachgeschichte" finden sich ebenfalls einige Tutorials zur Suche in einschlägigen Korpora.
+
 - Sehr empfehlenswert und erfreulich ausführlich ist außerdem die <a href="https://www.bubenhofer.com/korpuslinguistik/kurs/index.php?id=uebersicht.html" target="_blank">Korpuslinguistik-Seite von Noah Bubenhofer.</a>
 </details>
 
@@ -59,7 +62,14 @@ Alternativ können wir das gleiche Ergebnis auch durch Verwendug regulärer Ausd
 Die Suche liefert uns 88 Treffer, die nun im Browser in ihrem jeweiligen Kontext dargestellt werden. Diese Daten wollen wir nun exportieren, und zwar im "Key Word in Context" (KWIC)-Format. Damit ist gemeint, dass der Suchtreffer zusammen mit seinem unmittelbaren Kontext dargestellt wird. Erfreulicherweise bietet das DWDS eine sehr gute Exportfunktion, die es erlaubt, Daten im CSV-Format zu speichern. 
 
 ```{r dwdsexp, echo = FALSE, fig.cap="Export aus dem DWDS"}
-knitr::include_graphics("fig/dwdsdownload.gif")
+
+if (knitr:::is_latex_output()) {
+  knitr::include_graphics("fig/dwdsdownload.png")
+} else {
+  knitr::include_graphics("figs/dwdsdownload.gif")
+}
+
+# knitr::include_graphics("fig/dwdsdownload.gif")
 ```
 
 Eine solche Sammlung von Korpusbelegen, wie wir sie jetzt exportiert haben, nennt man in der Korpuslinguistik **Konkordanz**. Der Formatname "CSV" steht für "Comma-Separated Values". Das heißt, in der Datei sind die einzelnen Werte durch Kommata voneinander abgetrennt. In einem Texteditor sieht das Ganze so aus wie in \@ref(fig:dwdseditor). Wie Sie sehen, enthält die Datei neben den Korpusbelegen selbst auch Metadaten zu den einzelnen Belegen, z.B. zu Autor*in, Titel etc.
@@ -101,7 +111,14 @@ Hier sind einige Sonderzeichen verlorengegangen, weil Excel die Kodierung der Da
 
 
 ```{r importexcel, echo = FALSE, fig.cap="Import in Excel"}
-knitr::include_graphics("fig/import_in_excel.gif")
+
+if (knitr:::is_latex_output()) {
+  knitr::include_graphics("fig/import_in_excel.png")
+} else {
+  knitr::include_graphics("fig/import_in_excel.gif")
+}
+
+# knitr::include_graphics("fig/import_in_excel.gif")
 ```
 
 
@@ -112,4 +129,6 @@ knitr::include_graphics("fig/import_in_excel.gif")
 ```{r calcimport, echo = FALSE, out.width = '60%', out.height = '60%', fig.cap="Import in Calc"}
 knitr::include_graphics("fig/calc_import.png")
 ```
+
+
 

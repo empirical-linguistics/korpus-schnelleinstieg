@@ -2,9 +2,6 @@
 title: "Einfache Korpusanalysen: Ein Schnelleinstieg"
 author: "Stefan Hartmann"
 date: "`r Sys.Date()`"
-output: 
-  bookdown::gitbook:
-    toc_depth: 4
 ---
 
 ```{r setup, include=FALSE}
