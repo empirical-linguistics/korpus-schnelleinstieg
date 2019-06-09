@@ -1,0 +1,17 @@
+book_filename: "korpus-schnelleinstieg"
+language:
+  label:
+    fig: 'Fig. '
+    tab: 'Tab. '
+    eq: 'Gleichung '
+    thm: 'Theorem '
+    lem: 'Lemma '
+    cor: 'Corollary '
+    prp: 'Proposition '
+    cnj: 'Konjektur '
+    def: 'Definition '
+    exm: 'Bsp. '
+    exr: 'Übung '
+    proof: 'Beweis '
+    remark: 'Anm. '
+    solution: 'Lösung '

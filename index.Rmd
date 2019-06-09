@@ -1,28 +1,29 @@
 ---
-title: 'Einsteiger-Tutorial: Einfache Korpusanalysen'
+title: "Einfache Korpusanalysen: Ein Schnelleinstieg"
 author: "Stefan Hartmann"
-date: "7 June 2019"
-output: html_document
+date: "`r Sys.Date()`"
+output: 
+  bookdown::gitbook:
+    toc_depth: 4
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Einstieg
 
-Ziel dieses Tutorials ist es, Anfänger*innen einen möglichst niedrigschwelligen Einstieg in einfache Korpusanalysen zu ermöglichen. Es ist insbesondere für Studierende gedacht, die z.B. für eine Seminararbeit eine Korpusrecherche durchführen möchten, aber bislang noch keine praktische Erfahrung mit korpuslinguistischen Methoden sammeln konnten. 
+# Einstieg
 
-```{r cars}
-summary(cars)
-```
+Ziel dieses Tutorials ist es, Anfänger*innen einen möglichst niedrigschwelligen Einstieg in einfache Korpusanalysen zu ermöglichen. Es ist insbesondere für Studierende gedacht, die z.B. für eine Seminararbeit eine Korpusrecherche durchführen möchten, aber bislang noch keine praktische Erfahrung mit korpuslinguistischen Methoden sammeln konnten. Das Tutorial bietet anhand eines konkreten Beispiels eine Schritt-für-Schritt-Anleitung, wie man von der Fragestellung zur Datengewinnung hin zur Analyse der Daten gelangen kann. 
 
-## Including Plots
+Um wirklich einen Schnelleinstieg bieten zu können, muss ich notwendigerweise vieles vereinfachen. Für Ihre konkrete Korpusstudie werden Sie daher wahrscheinlich nicht umhinkommen, sich an der einen oder anderen Stelle tiefer einzulesen. Dafür verweise ich im Text immer wieder auf weiterführende Ressourcen. Teilweise finden sich auch in diesem Tutorial vertiefende Passagen, die Sie aufklappen können:
 
-You can also embed plots, for example:
+<details>
+<summary>‣ **klick mich**</summary>
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+Hallo, ich bin eine vertiefende Passage.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Sonst gibt es hier nichts zu sehen. Sie können mich gern wieder schließen. Danke.
+
+</details>
+

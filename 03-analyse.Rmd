@@ -1,0 +1,3 @@
+# Von der Konkordanz zur Analyse
+
+Nun haben wir die Konkordanz erfolgreich in ein Tabellenkalkulationsprogramm importiert. Hier können wir beliebig viele weitere Spalten hinzufügen.
