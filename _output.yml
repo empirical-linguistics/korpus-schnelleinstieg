@@ -1,7 +1,11 @@
 bookdown::gitbook:
    config:
-     toc:
+    toc:
        collapse: null
+    sharing:
+        facebook: no
+        twitter: no
+        all: ['facebook', 'twitter', 'linkedin', 'weibo', 'instapaper']
    toc_depth: 4
        
 bookdown::pdf_book:
