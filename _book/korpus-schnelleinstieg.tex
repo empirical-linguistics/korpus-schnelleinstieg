@@ -120,6 +120,12 @@ Hallo, ich bin eine vertiefende Passage.
 Sonst gibt es hier nichts zu sehen. Sie können mich gern wieder
 schließen. Danke.
 
+Ein Hinweis vorab: Das Tutorial setzt keine Kenntnisse in der
+Korpuslinguistik oder im Umgang mit Tabellenkalkulationsprogrammen
+voraus, wohl aber grammatische Grundkenntnisse. Sollten Sie die
+Fachbegriffe nicht verstehen, empfehle ich sehr, sie nachzuschlagen und
+die entsprechenden Wissenslücken zu schließen.
+
 \section{Von der Fragestellung zur
 Konkordanz}\label{von-der-fragestellung-zur-konkordanz}
 
@@ -337,7 +343,10 @@ einen für die freie Alternative Calc.
   Datumsspalte können Sie prinzipiell auch als ``Datum'' formatieren,
   falls Sie ausschließlich in Excel weiterarbeiten, aber tendenziell
   rate ich davon ab - gerade bei einer späteren Konversion in andere
-  Dateiformate kann dabei alles mögliche schiefgehen\ldots{})
+  Dateiformate kann dabei alles mögliche schiefgehen\ldots{}) Tipp: Um
+  alle Spalten auf einmal als ``Text'' zu formatieren, einfach im
+  Fenster ganz nach rechts scrollen und mit gedrückter Shift-Taste auf
+  die letzte Spalte klicken, dann sind alle Spalten markiert.
 \end{enumerate}
 
 \begin{figure}
@@ -406,6 +415,88 @@ beantworten müssen:
   metaphorischer Gebrauch vor, bei der Aspekte der Quelldomäne
   ``Technik'' auf eine abstraktere Zieldomäne übertragen werden.
 \end{enumerate}
+
+In den nächsten Abschnitten wollen wir uns beiden Fragen etwas genauer
+zuwenden.
+
+\subsubsection{Annotation prädikativ
+vs.~nicht-prädikativ}\label{annotation-pradikativ-vs.nicht-pradikativ}
+
+Wenn wir Daten annotieren, besteht eine wesentliche Herausforderung
+immer in der \textbf{Operationalisierung} konkreter Fragestellungen. In
+vielen Fällen ist es so, dass wir die Frage, die uns interessiert, auf
+den ersten Blick glauben für jeden Datenpunkt klar beantworten zu
+können. Bei genauerem Hinsehen ergeben sich dann aber doch einige
+Zweifelsfälle. So ist es auch hier: Um die Frage operationalisieren zu
+können, muss man zunächst einmal die Entscheidung treffen, ob man eine
+Struktur wie \emph{Der Computer ist programmiert} als Zustandspassiv mit
+\emph{sein} als Hilfsverb (analog zum Vorgangspassiv mit \emph{werden}
+als Hilfsverb) oder als Konstruktion aus der Kopula \emph{sein} und dem
+Partizip II \emph{programmiert} interpretiert. Wir entscheiden uns hier
+für Letzteres. Jedoch zeigt dieses Beispiel: Wie wir Daten
+interpretieren, hängt oft genug von unserem theoretischen Zugang ab. Das
+ist nicht weiter schlimm, sondern liegt in der Natur der Sache -
+Wissenschaft kann nie ganz frei von Theorie und nie ganz frei von
+Interpretation sein. Wichtig ist, dass die Entscheidung, die wir
+treffen, sich gut begründen lässt und konsequent durchgehalten wird.
+
+Wie setzen wir die Annotation nun in unserer Tabelle um? Auch hier zeige
+ich wieder Wege für Excel und Calc. Gerade die unten skizzierte
+Möglichkeit, Daten als ``Tabelle'' zu formatieren, finde ich persönlich
+an Excel sehr hilfreich, weshalb ich Excel i.d.R. bevorzuge. Allerdings
+halte ich es auch für wichtig, sich in der Wissenschaft nicht von
+proprietärer Software oder proprietären Datenformaten abhängig zu
+machen, und nicht jede Uni hat eine Office-Lizenz - deshalb zeige ich
+auch den Weg mit der freien Alternative auf.
+
+\paragraph{Umsetzung in Excel}\label{umsetzung-in-excel}
+
+Excel bietet die schöne Möglichkeit, Daten als Tabelle zu formatieren.
+Das ist über den Reiter Einfügen \textgreater{} Tabelle möglich, wie in
+\ref{fig:excelastable} gezeigt. In der Regel erkennt Excel automatisch
+die Dimensionen der Tabelle, sodass Sie nur noch anklicken müssen, dass
+die Tabelle Überschriften hat, und dann auf ``OK'' klicken können, und
+schon sind alle Zellen schön formatiert, und vor allem kann man über die
+kleinen Pfeilsymbole oben die einzelnen Spalten nach bestimmten Werten
+filtern, was sich im weiteren Verlauf der Arbeit noch als nützlich
+erweisen kann. (Letzteres erreicht man auch über Daten \textgreater{}
+Filter, aber mit der Tabellen-Option wird das Ganze optisch noch ein
+bisschen hübscher, und vor allem muss man keinen neuen Filter setzen,
+wenn man eine neue Spalte hinzufügt.)
+
+\begin{figure}
+\includegraphics[width=6.66in]{fig/excelastable01} \caption{Formatierung als Tabelle und Hinzufügen einer Annotationsspalte "praedikativ"}\label{fig:excelastable}
+\end{figure}
+
+Als nächstes fügen wir eine neue Spalte rechts von der letzten
+existierenden Spalte hinzu, der wir die Überschrift ``praedikativ''
+geben. (Wir könnten auch problemlos den Umlaut verwenden, aber ich neige
+dazu, aus Vorsicht alle Sonderzeichen, die Probleme bereiten könnten,
+wegzulassen.) Hier tragen wir nun für jeden Datenpunkt ein, ob es sich
+um eine prädikative Verwendung handelt oder nicht. Ich verwende hierfür
+gern die Werte ``y'' und ``n'', weil sie schön kurz sind. j/n oder
+ja/nein gehen natürlich auch.
+
+Um Zeit zu sparen, kann man auch nur einen der beiden Werte annotieren
+und dann die leeren Zellen einfach auffüllen, wie in
+\ref{fig:excelbulkchange} gezeigt: Hier sind die ``y''-Werte schon
+annotiert, alle anderen Zeilen sind leer. Nun filtert man erst die
+``praedikativ''-Spalte so, dass nur noch die leeren Zellen zu sehen
+sind, indem man die Zellen mit dem Wert ``y'' abwählt. Dann markiert man
+die Spalte ``praedikativ'' von der ersten bis zur letzten Zeile (die
+Überschrift wird nicht mitmarkiert). Gibt man nun ``n'' ein (noch nicht
+Enter drücken!!), so erscheint der Wert zunächst in der ersten Zeile.
+Drückt man nun statt der Eingabetaste Strg+Enter (bzw. bei Mac
+Cmd+Enter), so wird der in der ersten Zeile eingegebene Wert auf alle
+folgenden Zellen übertragen.
+
+\begin{figure}
+\includegraphics[width=6.66in]{fig/excel_bulk_change} \caption{Eine Tabellenspalte wird so gefiltert, dass nur noch die leeren Zellen zu sehen sind, und allen leeren Zellen wird derselbe Wert zugewiesen.}\label{fig:excelbulkchange}
+\end{figure}
+
+Wenn wir nun den Filter herausnehmen, sehen wir, dass nun alle vorher
+leeren Zeilen ein ``n'' haben, während alle Zeilen mit ``y'' unverändert
+geblieben sind.
 
 
 \end{document}

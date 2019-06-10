@@ -24,3 +24,5 @@ Sonst gibt es hier nichts zu sehen. Sie können mich gern wieder schließen. Dan
 
 </details>
 
+Ein Hinweis vorab: Das Tutorial setzt keine Kenntnisse in der Korpuslinguistik oder im Umgang mit Tabellenkalkulationsprogrammen voraus, wohl aber grammatische Grundkenntnisse. Sollten Sie die Fachbegriffe nicht verstehen, empfehle ich sehr, sie nachzuschlagen und die entsprechenden Wissenslücken zu schließen.
+
