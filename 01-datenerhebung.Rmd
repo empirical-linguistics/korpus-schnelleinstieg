@@ -10,7 +10,7 @@ Die meisten empirischen Studien lassen sich auf folgende Schritte herunterbreche
 
 ## Eine Fragestellung formulieren
 
-Der erste Schritt ist wahrscheinlich der wichtigste. Nur wenn Sie eine gute Forschungsfrage haben, können Sie eine aussagekräftige empirische Analyse durchführen. Aus der Forschungsfrage ergibt sich die Methode: Für manche Fragestellungen bietet sich z.B. eine Fragebogenstudie an, für eine eine psycho- oder neurolinguistische Herangehensweise, für wieder andere eine Korpusrecherche.
+Der erste Schritt ist wahrscheinlich der wichtigste. Nur wenn Sie eine gute Forschungsfrage haben, können Sie eine aussagekräftige empirische Analyse durchführen. Aus der Forschungsfrage ergibt sich die Methode: Für manche Fragestellungen bietet sich z.B. eine Fragebogenstudie an, für andere eine psycho- oder neurolinguistische Herangehensweise, für wieder andere eine Korpusrecherche.
 
 Das heißt auch: Wenn Sie eine Korpusanalyse durchführen möchten, brauchen Sie eine Fragestellung, die korpuslinguistisch operationalisierbar ist. Beispielsweise lässt sich eine Frage wie "Welche Gehirnareale werden beim Hören von Bewegungsverben aktiviert?" natürlich nicht mit Hilfe von Korpusdaten beantworten. 
 
@@ -64,9 +64,9 @@ Die Suche liefert uns 88 Treffer, die nun im Browser in ihrem jeweiligen Kontext
 ```{r dwdsexp, echo = FALSE, fig.cap="Export aus dem DWDS"}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/dwdsdownload.png", dpi = 400)
+  knitr::include_graphics("docs/fig/dwdsdownload.png", dpi = 400)
 } else {
-  knitr::include_graphics("fig/dwdsdownload.gif")
+  knitr::include_graphics("docs/fig/dwdsdownload.gif")
 }
 
 # knitr::include_graphics("fig/dwdsdownload.gif")
@@ -75,7 +75,7 @@ if (knitr:::is_latex_output()) {
 Eine solche Sammlung von Korpusbelegen, wie wir sie jetzt exportiert haben, nennt man in der Korpuslinguistik **Konkordanz**. Der Formatname "CSV" steht für "Comma-Separated Values". Das heißt, in der Datei sind die einzelnen Werte durch Kommata voneinander abgetrennt. In einem Texteditor sieht das Ganze so aus wie in \@ref(fig:dwdseditor). Wie Sie sehen, enthält die Datei neben den Korpusbelegen selbst auch Metadaten zu den einzelnen Belegen, z.B. zu Autor*in, Titel etc.
 
 ```{r dwdseditor, echo = FALSE, fig.cap="Konkordanz im Texteditor"}
-knitr::include_graphics("fig/conc_in_editor.png", dpi = 450)
+knitr::include_graphics("docs/fig/conc_in_editor.png", dpi = 450)
 ```
 
 
@@ -87,7 +87,7 @@ Damit können wir zunächst noch wenig anfangen: Wir wollen die Konkordanz in ei
 Wenn Sie Microsoft Excel auf Ihrem Rechner installiert haben, sind die Default-Einstellungen höchstwahrscheinlich so gesetzt, dass CSV-Dateien in Excel geöffnet werden, wenn Sie darauf doppelklicken. Warum das keine gute Idee ist, zeigt der folgende Screenshot \@ref(fig:excel1) (rote Hervorhebungen von mir nachträglich hinzugefügt).
 
 ```{r excel1, echo = FALSE, fig.cap="Konkordanz bei direktem Öffnen in Excel"}
-knitr::include_graphics("fig/conc_in_excel_bad.png", dpi = 500)
+knitr::include_graphics("docs/fig/conc_in_excel_bad.png", dpi = 500)
 ```
 
 Hier sind einige Sonderzeichen verlorengegangen, weil Excel die Kodierung der Datei nicht richtig erkannt hat. Es gibt mehrere Wege, diesem Problem zu begegnen. Ich empfehle hier zwei: Einen für [Excel][Import in Excel] und einen für die freie Alternative [Calc][Import in Calc].
@@ -113,9 +113,9 @@ Hier sind einige Sonderzeichen verlorengegangen, weil Excel die Kodierung der Da
 ```{r importexcel, echo = FALSE, fig.cap="Import in Excel"}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/import_in_excel.png", dpi = 450)
+  knitr::include_graphics("docs/fig/import_in_excel.png", dpi = 450)
 } else {
-  knitr::include_graphics("fig/import_in_excel.gif")
+  knitr::include_graphics("docs/fig/import_in_excel.gif")
 }
 
 # knitr::include_graphics("fig/import_in_excel.gif")
@@ -127,7 +127,7 @@ if (knitr:::is_latex_output()) {
 Öffnet man die Datei im kostenlosen Tabellenkalkulationsprogramm Calc von LibreOffice (mit Rechtsklick \> Öffen mit), so öffnet sich zunächst automatisch der Textimportassistent. Hier muss man Calc mitteilen, welches Format die Datei hat. In unserem Fall ist der Text UTF-8-kodiert, wir haben Kommas als Spaltentrenner und Anführungszeichen als Textqualifizieren, wie in \@ref(fig:calcimport).
 
 ```{r calcimport, echo = FALSE, out.width = '50%', out.height = '50%', fig.cap="Import in Calc"}
-knitr::include_graphics("fig/calc_import.png")
+knitr::include_graphics("docs/fig/calc_import.png")
 ```
 
 

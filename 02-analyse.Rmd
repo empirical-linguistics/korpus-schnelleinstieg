@@ -38,9 +38,9 @@ Um die Belege im Kontext besser lesen zu können, empfiehlt es sich, zunächst e
 ```{r excelastable, echo = FALSE, fig.cap="Formatierung als Tabelle und Hinzufügen einer Annotationsspalte \"praedikativ\""}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/excelastable01.png", dpi = 450)
+  knitr::include_graphics("docs/fig/excelastable01.png", dpi = 450)
 } else {
-  knitr::include_graphics("fig/excelastable01.gif")
+  knitr::include_graphics("docs/fig/excelastable01.gif")
 }
 
 
@@ -55,9 +55,9 @@ In einigen Fällen, in denen man sehr viel Text im linken und rechten Kontext ha
 ```{r excelwrap, echo = FALSE, fig.cap="Zeilenumbruch innerhalb von Zellen einschalten"}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/excellinewrap.png", dpi = 450)
+  knitr::include_graphics("docs/fig/excellinewrap.png", dpi = 450)
 } else {
-  knitr::include_graphics("fig/excellinewrap.gif")
+  knitr::include_graphics("docs/fig/excellinewrap.gif")
 }
 
 
@@ -72,9 +72,9 @@ Um Zeit zu sparen, kann man auch nur einen der beiden Werte annotieren und dann 
 ```{r excelbulkchange, echo = FALSE, fig.cap="Eine Tabellenspalte wird so gefiltert, dass nur noch die leeren Zellen zu sehen sind, und allen leeren Zellen wird mit Strg/Cmd+Enter derselbe Wert zugewiesen."}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/excel_bulk_change.png", dpi = 450)
+  knitr::include_graphics("docs/fig/excel_bulk_change.png", dpi = 450)
 } else {
-  knitr::include_graphics("fig/excel_bulk_change.gif")
+  knitr::include_graphics("docs/fig/excel_bulk_change.gif")
 }
 
 
@@ -91,9 +91,9 @@ In Calc empfiehlt es sich, zunächst einmal die Spaltenbreite anzupassen und nic
 ```{r calcformat, echo = FALSE, fig.cap="Formatierung der Tabelle in Calc und Setzen eines Filters"}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/calcformat.png", dpi = 450)
+  knitr::include_graphics("docs/fig/calcformat.png", dpi = 450)
 } else {
-  knitr::include_graphics("fig/calcformat.gif")
+  knitr::include_graphics("docs/fig/calcformat.gif")
 }
 
 
@@ -108,9 +108,9 @@ Um Zeit zu sparen, kann man auch nur einen der beiden Werte annotieren und dann 
 ```{r calcbulkchange, echo = FALSE, fig.cap="Eine Tabellenspalte wird so gefiltert, dass nur noch die leeren Zellen zu sehen sind, und allen leeren Zellen wird mit Alt+Enter derselbe Wert zugewiesen."}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/calc_bulkchange.png", dpi = 450)
+  knitr::include_graphics("docs/fig/calc_bulkchange.png", dpi = 450)
 } else {
-  knitr::include_graphics("fig/calc_bulkchange.gif")
+  knitr::include_graphics("docs/fig/calc_bulkchange.gif")
 }
 
 ```
@@ -174,9 +174,9 @@ Stellen Sie zunächst sicher, dass eine Zelle innerhalb der Tabelle angewählt i
 ```{r excelpivot, echo = FALSE, fig.cap="Erstellen einer Pivot-Tabelle in Excel."}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/excelpivot.png", dpi = 450)
+  knitr::include_graphics("docs/fig/excelpivot.png", dpi = 450)
 } else {
-  knitr::include_graphics("fig/excel_pivot.gif")
+  knitr::include_graphics("docs/fig/excel_pivot.gif")
 }
 
 ```
@@ -187,7 +187,7 @@ Nun öffnet sich ein neues Arbeitsblatt (mit den Reitern unten können Sie zwisc
 
 ```{r excelpivotsimple, echo = FALSE, fig.cap="Erstellen einer Pivot-Tabelle in Excel."}
 
-knitr::include_graphics("fig/excel_simplepivot.png", dpi = 400)
+knitr::include_graphics("docs/fig/excel_simplepivot.png", dpi = 400)
 
 ```
 
@@ -197,7 +197,7 @@ In unserem Beispiel wollen wir genau das tun: Wir wollen ja nur die prädikativ 
 
 ```{r countofhit, echo = FALSE, fig.cap="Entfernen einer Spalte aus dem \"Werte\"-Feld."}
 
-knitr::include_graphics("fig/countofhit.png", dpi = 400)
+knitr::include_graphics("docs/fig/countofhit.png", dpi = 400)
 
 ```
 
@@ -207,7 +207,7 @@ Dann ziehen wir die Spalte "prädikativ" in das Feld "Filter". Jetzt können wir
 
 ```{r praedikativfilter, echo = FALSE, fig.cap="Entfernen einer Spalte aus dem \"Werte\"-Feld."}
 
-knitr::include_graphics("fig/praedikativ_filter.png", dpi = 400)
+knitr::include_graphics("docs/fig/praedikativ_filter.png", dpi = 400)
 
 ```
 
@@ -221,23 +221,47 @@ Zur Auswertung müssen wir die drei Spalten nun sinnvoll auf die "Zeilen"- und "
 
 ```{r excelfilter, echo = FALSE, fig.cap="Tabellarische Auswertung der Korpusdaten mit Hilfe der PivotTable-Funktion."}
 
-knitr::include_graphics("fig/excel_allfilters.png", dpi = 400)
+knitr::include_graphics("docs/fig/excel_allfilters.png", dpi = 400)
 
 ```
 
 Schon auf den ersten Blick sehen wir eine ungleiche Verteilung der Daten auf die beiden Varianten: *vorprogrammiert* wird in unseren Daten ausschließlich in metaphorischen Kontexten und ausschließlich für Resultate gebraucht. Bei *programmiert* ist der Gebrauch vielfältiger, wenngleich auch hier eine Präferenz für eben diese Merkmalskombination (metaphorischer Kontext/Resultat) deutlich wird.
 
-Quasi als Sahnehäubchen können wir diese Verteilung auch visualisieren, beispielsweise mit einem Balkendiagramm.^[Vgl. jedoch z.B. <a href="https://barbarplots.github.io/" target="_blank">diese Seite</a> zu Problemen, die Balkendiagramme u.U. mit sich bringen.] Das geht, indem wir die relevanten Zellen in der PivotTable markieren (also alles, was nicht die Gesamtsumme anzeigt) und dann in "Einfügen" eine passende Visualisierungsoption auswählen. \@ref(fig:excelvisualize) zeigt eine Möglichkeit, das umzusetzen.
+Quasi als Sahnehäubchen können wir diese Verteilung auch visualisieren, beispielsweise mit einem Balkendiagramm.^[Vgl. jedoch z.B. <a href="https://barbarplots.github.io/" target="_blank">diese Seite</a> zu Problemen, die Balkendiagramme u.U. mit sich bringen.] Das geht, indem wir die relevanten Zellen in der PivotTable markieren (also alles, was nicht die Gesamtsumme anzeigt) und dann in "Einfügen" eine passende Visualisierungsoption auswählen. \@ref(fig:excelvisualize) zeigt eine Möglichkeit, das umzusetzen:
 
 ```{r excelvisualize, echo = FALSE, fig.cap="Erstellen eines Balkendiagramms aus einer Pivot-Tabelle in Excel."}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/excel_visualize.png", dpi = 450)
+  knitr::include_graphics("docs/fig/excel_visualize.png", dpi = 450)
 } else {
-  knitr::include_graphics("fig/excel_visualize.gif")
+  knitr::include_graphics("docs/fig/excel_visualize.gif")
 }
 
 ```
 
 
+Damit die Grafik nicht so asymmetrisch aussieht wie Fig. \@ref(fig:asymmetric), werden zunächst die Feldeinstellungen so verändert, dass auch Felder mit Null-Werten angezeigt werden. Anschließend wird ein Balkendiagramm ausgewählt, das den prozentualen Anteil der jeweiligen Variante darstellt. Durch Rechtsklick auf die Balken kann man außerdem noch "Data Labels" hinzufügen, d.h. die absoluten Werte in den Balken darstellen lassen. Das ist empfehlenswert, weil so die Leserin oder der Leser schnell einen Eindruck gewinnen kann, wie groß die Datenbasis ist, auf der die Darstellung basiert - denn es macht ja schon einen gewichtigen Unterschied, ob eine Verteilung wie, sagen wir 10% : 90% auf zehn, auf hundert oder auf tausend Datenpunkten basiert!
+ 
+```{r asymmetric, echo = FALSE, fig.cap="Balkendiagramm, in dem nicht belegte Variablenausprägungen ausgelassen werden."}
 
+
+knitr::include_graphics("docs/fig/excel_graph_asymmetric.pdf", dpi = 450)
+
+
+```
+
+
+### Auswertung und Visualisierung in Calc
+
+Auch in Calc gibt es eine PivotTable-Funktion, die sich im Dropdown-Menü "Data" findet. Mit Hilfe von PivotTable > Erstellen gelangt man in ein Auswahlmenü, in dem rechts die einzelnen Spaltennamen als "available fields" zu sehen sind. Links sehen wir drei rechteckige Felder: eins für Zeilen, eins für Spalten und eins für Werte (das Letztere trägt die nicht ganz so aussagekräftige Überschrift "Data fields"). Aus der Auflistung rechts können wir nun die Variablen, die wir in den Spalten sehen wollen, ins "Spalten"-Feld ziehen, diejenigen, die wir in den Zeilen sehen wollen, ins "Zeilen"-Feld und schließlich diejenigen, die Calc für uns auszählen soll, ins "Data fields"-Feld. 
+
+
+```{r calcpivot, echo = FALSE, fig.cap="Erstellen einer Pivot-Tabelle in Calc."}
+
+if (knitr:::is_latex_output()) {
+  knitr::include_graphics("docs/fig/calc_pivot.png", dpi = 450)
+} else {
+  knitr::include_graphics("docs/fig/calc_pivot.gif")
+}
+
+```

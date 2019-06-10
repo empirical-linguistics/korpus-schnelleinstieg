@@ -31,7 +31,7 @@ Das Tutorial liegt sowohl im HTML-Format als auch im PDF-Format vor (die PDF-Ver
 
 ```{r ccbysa, echo = FALSE, fig.align = 'center', out.width = '30%', out.height = '30%'}
 
-knitr::include_graphics("fig/by-sa.png")
+knitr::include_graphics("docs/fig/by-sa.png")
 
 ```
 
