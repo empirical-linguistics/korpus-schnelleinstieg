@@ -90,7 +90,7 @@ Wenn Sie Microsoft Excel auf Ihrem Rechner installiert haben, sind die Default-E
 knitr::include_graphics("fig/conc_in_excel_bad.png", dpi = 500)
 ```
 
-Hier sind einige Sonderzeichen verlorengegangen, weil Excel die Kodierung der Datei nicht richtig erkannt hat. Es gibt mehrere Wege, diesem Problem zu begegnen. Ich empfehle hier zwei: Einen für Excel und einen für die freie Alternative Calc.
+Hier sind einige Sonderzeichen verlorengegangen, weil Excel die Kodierung der Datei nicht richtig erkannt hat. Es gibt mehrere Wege, diesem Problem zu begegnen. Ich empfehle hier zwei: Einen für [Excel][Import in Excel] und einen für die freie Alternative [Calc][Import in Calc].
 
 
 #### Import in Excel

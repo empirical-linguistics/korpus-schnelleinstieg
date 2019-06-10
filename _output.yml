@@ -12,5 +12,6 @@ bookdown::pdf_book:
     latex_engine: xelatex
     keep_tex: yes
     toc: true
+    toc_depth: 4
     includes:
         in_header: preamble.tex

@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Ziel dieses Tutorials ist es, Anfänger*innen einen möglichst niedrigschwelligen Einstieg in einfache Korpusanalysen zu ermöglichen. Es ist insbesondere für Studierende gedacht, die z.B. für eine Seminararbeit eine Korpusrecherche durchführen möchten, aber bislang noch keine praktische Erfahrung mit korpuslinguistischen Methoden sammeln konnten. Das Tutorial bietet anhand eines konkreten Beispiels eine Schritt-für-Schritt-Anleitung, wie man von der Fragestellung zur Datengewinnung hin zur Analyse der Daten gelangen kann. 
 
-Um wirklich einen Schnelleinstieg bieten zu können, muss ich notwendigerweise vieles vereinfachen. Für Ihre konkrete Korpusstudie werden Sie daher wahrscheinlich nicht umhinkommen, sich an der einen oder anderen Stelle tiefer einzulesen. Dafür verweise ich im Text immer wieder auf weiterführende Ressourcen. Teilweise finden sich auch in diesem Tutorial vertiefende Passagen, die Sie aufklappen können:
+Um wirklich einen Schnelleinstieg bieten zu können, muss ich notwendigerweise vieles vereinfachen. Für Ihre konkrete Korpusstudie werden Sie daher wahrscheinlich nicht umhinkommen, sich an der einen oder anderen Stelle tiefer einzulesen. Dafür verweise ich im Text immer wieder auf weiterführende Ressourcen. Teilweise finden sich auch in diesem Tutorial vertiefende Passagen, die Sie (in der HTML-Version) aufklappen können:
 
 <details>
 <summary>‣ **klick mich**</summary>
@@ -26,3 +26,13 @@ Sonst gibt es hier nichts zu sehen. Sie können mich gern wieder schließen. Dan
 
 Ein Hinweis vorab: Das Tutorial setzt keine Kenntnisse in der Korpuslinguistik oder im Umgang mit Tabellenkalkulationsprogrammen voraus, wohl aber grammatische Grundkenntnisse. Sollten Sie die Fachbegriffe nicht verstehen, empfehle ich sehr, sie nachzuschlagen und die entsprechenden Wissenslücken zu schließen.
 
+
+
+```{r ccbysa, echo = FALSE, fig.align = 'center', out.width = '30%', out.height = '30%'}
+
+knitr::include_graphics("fig/by-sa.png")
+
+```
+
+
+Dieses Tutorial ist lizenziert unter CC-BY-SA und kann gerne mit Quellenangabe weitergegeben und adaptiert werden.
