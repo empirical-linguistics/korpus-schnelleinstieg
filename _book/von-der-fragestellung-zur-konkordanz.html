@@ -25,7 +25,7 @@
 <meta name="author" content="Stefan Hartmann">
 
 
-<meta name="date" content="2019-06-09">
+<meta name="date" content="2019-06-10">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -138,14 +138,14 @@
 <h3><span class="header-section-number">2.2.2</span> Export</h3>
 <p>Die Suche liefert uns 88 Treffer, die nun im Browser in ihrem jeweiligen Kontext dargestellt werden. Diese Daten wollen wir nun exportieren, und zwar im “Key Word in Context” (KWIC)-Format. Damit ist gemeint, dass der Suchtreffer zusammen mit seinem unmittelbaren Kontext dargestellt wird. Erfreulicherweise bietet das DWDS eine sehr gute Exportfunktion, die es erlaubt, Daten im CSV-Format zu speichern.</p>
 <div class="figure"><span id="fig:dwdsexp"></span>
-<img src="figs/dwdsdownload.gif" alt="Export aus dem DWDS"  />
+<img src="fig/dwdsdownload.gif" alt="Export aus dem DWDS"  />
 <p class="caption">
 Fig. 2.1: Export aus dem DWDS
 </p>
 </div>
 <p>Eine solche Sammlung von Korpusbelegen, wie wir sie jetzt exportiert haben, nennt man in der Korpuslinguistik <strong>Konkordanz</strong>. Der Formatname “CSV” steht für “Comma-Separated Values”. Das heißt, in der Datei sind die einzelnen Werte durch Kommata voneinander abgetrennt. In einem Texteditor sieht das Ganze so aus wie in <a href="von-der-fragestellung-zur-konkordanz.html#fig:dwdseditor">2.2</a>. Wie Sie sehen, enthält die Datei neben den Korpusbelegen selbst auch Metadaten zu den einzelnen Belegen, z.B. zu Autor*in, Titel etc.</p>
 <div class="figure"><span id="fig:dwdseditor"></span>
-<img src="fig/conc_in_editor.png" alt="Konkordanz im Texteditor" width="1094" />
+<img src="fig/conc_in_editor.png" alt="Konkordanz im Texteditor" width="700" />
 <p class="caption">
 Fig. 2.2: Konkordanz im Texteditor
 </p>
@@ -156,7 +156,7 @@ Fig. 2.2: Konkordanz im Texteditor
 <h3><span class="header-section-number">2.2.3</span> Import in ein Tabellenkalkulationsprogramm</h3>
 <p>Wenn Sie Microsoft Excel auf Ihrem Rechner installiert haben, sind die Default-Einstellungen höchstwahrscheinlich so gesetzt, dass CSV-Dateien in Excel geöffnet werden, wenn Sie darauf doppelklicken. Warum das keine gute Idee ist, zeigt der folgende Screenshot <a href="von-der-fragestellung-zur-konkordanz.html#fig:excel1">2.3</a> (rote Hervorhebungen von mir nachträglich hinzugefügt).</p>
 <div class="figure"><span id="fig:excel1"></span>
-<img src="fig/conc_in_excel_bad.png" alt="Konkordanz bei direktem Öffnen in Excel" width="1260" />
+<img src="fig/conc_in_excel_bad.png" alt="Konkordanz bei direktem Öffnen in Excel" width="806" />
 <p class="caption">
 Fig. 2.3: Konkordanz bei direktem Öffnen in Excel
 </p>
@@ -167,7 +167,7 @@ Fig. 2.3: Konkordanz bei direktem Öffnen in Excel
 <ol style="list-style-type: decimal">
 <li><p>Öffnen Sie die Datei in einem Texteditor. Für Windows empfehle ich <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>, für Mac die kostenlose (und für unsere Zwecke völlig ausreichende) Version von <a href="https://www.barebones.com/products/bbedit/" target="_blank">BBEdit</a>, für Linux gibt es z.B. <a href="https://notepadqq.com/s/" target="_blank">Notepadqq</a>.</p></li>
 <li><p>Markieren Sie mit Strg+A bzw. Cmd+A den gesamten Text.</p></li>
-<li><p>Öffnen Sie ein leeres Tabellenblatt in Excel. Die nächsten Schritte, 4 bis , sind in <a href="von-der-fragestellung-zur-konkordanz.html#fig:importexcel">2.4</a> visualisiert.</p></li>
+<li><p>Öffnen Sie ein leeres Tabellenblatt in Excel. Die nächsten Schritte, 4 bis 7, sind in <a href="von-der-fragestellung-zur-konkordanz.html#fig:importexcel">2.4</a> visualisiert.</p></li>
 <li><p>In den meisten Fällen sollten Sie nun einfach mit Strg+V bzw. Cmd+V die Daten einfügen könnn. In manchen Fällen müssen Sie jedoch, wie im Screencast <a href="von-der-fragestellung-zur-konkordanz.html#fig:importexcel">2.4</a>, die Option “Paste Special” verwenden (dt. “Inhalte einfügen”) und angeben, dass Sie den Unicode-Text einfügen möchten.</p></li>
 <li><p>Mit Klick auf das kleine Klemmbrett-Symbol gelangen Sie zum Textimport-Assistenten. Hier müssen Sie Excel sagen, wie der eingefügte Text strukturiert ist. Auf der ersten Seite sagen Sie, dass es sich um einen Text handelt, bei dem die einzelnen Spalten durch ein Trennzeichen getrennt sind (“Delimited”) - diese Option ist in der Regel schon angewählt. Außerdem teilen Sie Excel hier mit, dass der eingefügte Text UTF-8-formatiert ist.</p></li>
 <li><p>Auf der nächste Seite des Textimport-Assistenten geben Sie an, dass Kommata als Spaltentrenner benutzt werden. Bei den Textqualifizierern müssen Sie nichts ändern, da hier schon Anführungszeichen ausgewählt sind: Wie Sie in <a href="von-der-fragestellung-zur-konkordanz.html#fig:dwdseditor">2.2</a> sehen können, werden Anführungszeichen in der CSV-Datei genutzt, um zusammengehörigen Text zusammenzuhalten (denn wären sie nicht da, würde Excel jedes Komma im Text für einen Spaltentrenner handeln.)</p></li>

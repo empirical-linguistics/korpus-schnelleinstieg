@@ -64,9 +64,9 @@ Die Suche liefert uns 88 Treffer, die nun im Browser in ihrem jeweiligen Kontext
 ```{r dwdsexp, echo = FALSE, fig.cap="Export aus dem DWDS"}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/dwdsdownload.png")
+  knitr::include_graphics("fig/dwdsdownload.png", dpi = 400)
 } else {
-  knitr::include_graphics("figs/dwdsdownload.gif")
+  knitr::include_graphics("fig/dwdsdownload.gif")
 }
 
 # knitr::include_graphics("fig/dwdsdownload.gif")
@@ -75,7 +75,7 @@ if (knitr:::is_latex_output()) {
 Eine solche Sammlung von Korpusbelegen, wie wir sie jetzt exportiert haben, nennt man in der Korpuslinguistik **Konkordanz**. Der Formatname "CSV" steht für "Comma-Separated Values". Das heißt, in der Datei sind die einzelnen Werte durch Kommata voneinander abgetrennt. In einem Texteditor sieht das Ganze so aus wie in \@ref(fig:dwdseditor). Wie Sie sehen, enthält die Datei neben den Korpusbelegen selbst auch Metadaten zu den einzelnen Belegen, z.B. zu Autor*in, Titel etc.
 
 ```{r dwdseditor, echo = FALSE, fig.cap="Konkordanz im Texteditor"}
-knitr::include_graphics("fig/conc_in_editor.png")
+knitr::include_graphics("fig/conc_in_editor.png", dpi = 450)
 ```
 
 
@@ -87,7 +87,7 @@ Damit können wir zunächst noch wenig anfangen: Wir wollen die Konkordanz in ei
 Wenn Sie Microsoft Excel auf Ihrem Rechner installiert haben, sind die Default-Einstellungen höchstwahrscheinlich so gesetzt, dass CSV-Dateien in Excel geöffnet werden, wenn Sie darauf doppelklicken. Warum das keine gute Idee ist, zeigt der folgende Screenshot \@ref(fig:excel1) (rote Hervorhebungen von mir nachträglich hinzugefügt).
 
 ```{r excel1, echo = FALSE, fig.cap="Konkordanz bei direktem Öffnen in Excel"}
-knitr::include_graphics("fig/conc_in_excel_bad.png")
+knitr::include_graphics("fig/conc_in_excel_bad.png", dpi = 500)
 ```
 
 Hier sind einige Sonderzeichen verlorengegangen, weil Excel die Kodierung der Datei nicht richtig erkannt hat. Es gibt mehrere Wege, diesem Problem zu begegnen. Ich empfehle hier zwei: Einen für Excel und einen für die freie Alternative Calc.
@@ -99,7 +99,7 @@ Hier sind einige Sonderzeichen verlorengegangen, weil Excel die Kodierung der Da
 
 2. Markieren Sie mit Strg+A bzw. Cmd+A den gesamten Text.
 
-3. Öffnen Sie ein leeres Tabellenblatt in Excel. Die nächsten Schritte, 4 bis , sind in \@ref(fig:importexcel) visualisiert.
+3. Öffnen Sie ein leeres Tabellenblatt in Excel. Die nächsten Schritte, 4 bis 7, sind in \@ref(fig:importexcel) visualisiert.
 
 4. In den meisten Fällen sollten Sie nun einfach mit Strg+V bzw. Cmd+V die Daten einfügen könnn. In manchen Fällen müssen Sie jedoch, wie im Screencast \@ref(fig:importexcel), die Option "Paste Special" verwenden (dt. "Inhalte einfügen") und angeben, dass Sie den Unicode-Text einfügen möchten.
 
@@ -113,7 +113,7 @@ Hier sind einige Sonderzeichen verlorengegangen, weil Excel die Kodierung der Da
 ```{r importexcel, echo = FALSE, fig.cap="Import in Excel"}
 
 if (knitr:::is_latex_output()) {
-  knitr::include_graphics("fig/import_in_excel.png")
+  knitr::include_graphics("fig/import_in_excel.png", dpi = 450)
 } else {
   knitr::include_graphics("fig/import_in_excel.gif")
 }
@@ -126,7 +126,7 @@ if (knitr:::is_latex_output()) {
 
 Öffnet man die Datei im kostenlosen Tabellenkalkulationsprogramm Calc von LibreOffice (mit Rechtsklick \> Öffen mit), so öffnet sich zunächst automatisch der Textimportassistent. Hier muss man Calc mitteilen, welches Format die Datei hat. In unserem Fall ist der Text UTF-8-kodiert, wir haben Kommas als Spaltentrenner und Anführungszeichen als Textqualifizieren, wie in \@ref(fig:calcimport).
 
-```{r calcimport, echo = FALSE, out.width = '60%', out.height = '60%', fig.cap="Import in Calc"}
+```{r calcimport, echo = FALSE, out.width = '50%', out.height = '50%', fig.cap="Import in Calc"}
 knitr::include_graphics("fig/calc_import.png")
 ```
 
