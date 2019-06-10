@@ -135,7 +135,8 @@ benötigt die PDF-Version weit weniger Speicherplatz.
 
 \begin{center}\includegraphics[width=0.3\linewidth,height=0.3\textheight]{fig/by-sa} \end{center}
 
-Dieses Tutorial ist lizenziert unter CC-BY-SA und kann gerne mit
+Dieses Tutorial wurde mit Hilfe von Bookdown für R geschrieben und
+publiziert. Es ist lizenziert unter CC-BY-SA und kann gerne mit
 Quellenangabe weitergegeben und adaptiert werden.
 
 \section{Von der Fragestellung zur
@@ -799,23 +800,71 @@ bei Bedarf filtern.
 
 In unserem Beispiel wollen wir genau das tun: Wir wollen ja nur die
 prädikativ gebrauchten Instanzen von \emph{(vor)programmiert}
-berücksichtigen. Deshalb ziehen wir ``Hits'' aus dem ``Zeilen''-Feld in
-das ``Filter''-Feld und entfernen es aus dem ``Werte''-Feld, indem wir
-es von da in das Fenster rechts oben ziehen (Fig. \ref{fig:countofhit}).
-Jetzt können wir im Fenster links die nicht-prädikativen Daten
-herausfiltern.
+berücksichtigen. leeren wir die beiden Felder zunächst wieder, indem wir
+``Hit'' aus dem jeweiligen Feld in das Fenster rechts oben ziehen (Fig.
+\ref{fig:countofhit}).
 
 \begin{figure}
 \includegraphics[width=6.36in]{fig/countofhit} \caption{Entfernen einer Spalte aus dem "Werte"-Feld.}\label{fig:countofhit}
 \end{figure}
 
+Dann ziehen wir die Spalte ``prädikativ'' in das Feld ``Filter''. Jetzt
+können wir im Fenster links die nicht-prädikativen Daten herausfiltern
+(s. Fig. \ref{fig:praedikativfilter}.
+
+\begin{figure}
+\includegraphics[width=6.28in]{fig/praedikativ_filter} \caption{Entfernen einer Spalte aus dem "Werte"-Feld.}\label{fig:praedikativfilter}
+\end{figure}
+
 Nun wollen wir eine tabellarische Übersicht über die Lesarten und die
-Referenz (Objekt vs.~Resultat) bekommen. Dafür ziehen wir die
-entsprechenden Spalten in die Felder ``Zeilen'' und ``Spalten'' - was
-wir in welches Fenster packen, ist eigentlich unwichtig, an den
-Ergebnissen ändert das nichts. Wichtig ist, dass wir nur eine der beide
-Spalten zusätzlich in das Fenster ``Werte'' ziehen. In
-\ref{fig:excelpivot} sehen wir, wie das aussehen kann.
+Referenz (Objekt vs.~Resultat) getrennt nach den beiden Varianten
+``programmiert'' und ``vorprogrammiert'' bekommen. Führen wir uns noch
+einmal vor Augen, was die dafür relevanten Tabellenspalten sind:
+
+\begin{itemize}
+\tightlist
+\item
+  Die Spalte ``Lesart'' enthält die Lesarten.
+\item
+  Die Spalte ``Referenz'' enthält die Information darüber, ob der
+  jeweilige Beleg auf das Objekt des Programmiervorgangs oder dessen
+  Resultat referiert.
+\item
+  Die Spalte ``Hit'' enthält die Variante des Treffers.
+\end{itemize}
+
+Zur Auswertung müssen wir die drei Spalten nun sinnvoll auf die
+``Zeilen''- und ``Spalten''-Felder verteilen und zudem angeben, was
+ausgezählt werden soll. Hier gibt es mehrere Möglichkeiten; eine davon
+ist in \ref{fig:excelfilter} dargestellt: In den Spalten werden die
+Daten nach Variante (``Hit'') ausgewertet, in den Zeilen zum einen nach
+Lesart, zum anderen nach Referenz. Ausgezählt wird die Spalte ``Lesart''
+- genauso gut könnten wir aber auch die Spalte ``Referenz'' auszählen,
+die Ergebnisse wären die gleichen, da ja beide Variablen in der Tabelle
+berücksichtigt sind.
+
+\begin{figure}
+\includegraphics[width=6.36in]{fig/excel_allfilters} \caption{Tabellarische Auswertung der Korpusdaten mit Hilfe der PivotTable-Funktion.}\label{fig:excelfilter}
+\end{figure}
+
+Schon auf den ersten Blick sehen wir eine ungleiche Verteilung der Daten
+auf die beiden Varianten: \emph{vorprogrammiert} wird in unseren Daten
+ausschließlich in metaphorischen Kontexten und ausschließlich für
+Resultate gebraucht. Bei \emph{programmiert} ist der Gebrauch
+vielfältiger, wenngleich auch hier eine Präferenz für eben diese
+Merkmalskombination (metaphorischer Kontext/Resultat) deutlich wird.
+
+Quasi als Sahnehäubchen können wir diese Verteilung auch visualisieren,
+beispielsweise mit einem Balkendiagramm.\footnote{Vgl. jedoch z.B. diese
+  Seite zu Problemen, die Balkendiagramme u.U. mit sich bringen.} Das
+geht, indem wir die relevanten Zellen in der PivotTable markieren (also
+alles, was nicht die Gesamtsumme anzeigt) und dann in ``Einfügen'' eine
+passende Visualisierungsoption auswählen. \ref{fig:excelvisualize} zeigt
+eine Möglichkeit, das umzusetzen.
+
+\begin{figure}
+\includegraphics[width=6.66in]{fig/excel_visualize} \caption{Erstellen eines Balkendiagramms aus einer Pivot-Tabelle in Excel.}\label{fig:excelvisualize}
+\end{figure}
 
 
 \end{document}
