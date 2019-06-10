@@ -1,0 +1,3 @@
+# Einfache Korpusanalysen: Ein Schnelleinstieg
+
+Dieses Repositorium enthält ein Tutorial zum Schnelleinstieg in einfache Korpusanalysen. Klicken Sie <a href="https://empirical-linguistics.github.io/korpus-schnelleinstieg/" target="_blank">hier</a>, um direkt zum Tutorial zu gelangen.
