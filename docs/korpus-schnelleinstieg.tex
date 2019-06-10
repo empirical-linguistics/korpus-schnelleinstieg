@@ -127,6 +127,12 @@ voraus, wohl aber grammatische Grundkenntnisse. Sollten Sie die
 Fachbegriffe nicht verstehen, empfehle ich sehr, sie nachzuschlagen und
 die entsprechenden Wissenslücken zu schließen.
 
+Das Tutorial liegt sowohl im HTML-Format als auch im PDF-Format vor (die
+PDF-Version können Sie im HTML-Dokument durch Klick auf den PDF-Button
+ganz oben herunterladen). Die HTML-Version arbeitet viel mit animierten
+GIFs, die in der PDF-Version natürlich nicht zu sehen sind. Dafür
+benötigt die PDF-Version weit weniger Speicherplatz.
+
 \begin{center}\includegraphics[width=0.3\linewidth,height=0.3\textheight]{fig/by-sa} \end{center}
 
 Dieses Tutorial ist lizenziert unter CC-BY-SA und kann gerne mit
@@ -754,7 +760,12 @@ Tabelle einbeziehen wollen, sodass wir nichts mehr ändern müssen) und ob
 die Tabelle auf dem aktuellen oder einem neuen Arbeitsblatt erstellt
 werden soll - es empfiehlt sich, sie auf einem neuen Arbeitsblatt zu
 erstellen, was auch die Default-Option ist. Also können wir einfach OK
-klicken.
+klicken. In der HTML-Version dieses Tutorials können Sie die einzelnen
+Schritte in Screencast \ref{fig:excelpivot} nachverfolgen.
+
+\begin{figure}
+\includegraphics[width=6.66in]{fig/excelpivot} \caption{Erstellen einer Pivot-Tabelle in Excel.}\label{fig:excelpivot}
+\end{figure}
 
 Nun öffnet sich ein neues Arbeitsblatt (mit den Reitern unten können Sie
 zwischen den Arbeitsblättern navigieren und ihnen ggf. auch
@@ -766,7 +777,45 @@ Rechts sehen wir oben eine Aufstellung der Namen der Tabellenspalten,
 unten sehen wir ein wiederum viergeteiltes Fenster. In die vier Felder
 in diesem Fenster können wir nun ausgewählte Spaltennamen aus dem
 Fenster oben rechts ziehen. Probieren Sie doch einmal, die Spalte
-``Hit'' in das Feld ``Zeilen'' zu ziehen.
+``Hit'' in das Feld ``Zeilen'' zu ziehen. Jetzt sehen Sie in der
+Pivot-Tabelle die beiden Zeilen ``programmiert'' und
+``vorprogrammiert''. Höchstwahrscheinlich ist ``Hit'' auch automatisch
+im Fenster ``Werte'' unten rechts aufgetaucht. Deshalb wird Ihnen in der
+Pivot-Tabelle auch die Häufigkeit der beiden Varianten angezeigt, wie in
+\ref{fig:excelpivotsimple}.
+
+\begin{figure}
+\includegraphics[width=0.84in]{fig/excel_simplepivot} \caption{Erstellen einer Pivot-Tabelle in Excel.}\label{fig:excelpivotsimple}
+\end{figure}
+
+Die Logik ist also ganz einfach: Was im Feld ``Spalten'' steht, taucht
+in den Spalten der Tabelle auf, was im Feld ``Zeilen'' steht, taucht in
+den Zeilen auf, und was im Feld ``Werte'' steht, das wird
+ausgezählt\footnote{bzw. bei numerischen Werten aufsummiert; hier muss
+  man ggf. aufpassen, dass die richtige Operation gewählt ist. Durch
+  Klick auf das kleine Info-Symbol in den Feldern kann man das bei
+  Bedarf anpassen}. Mit Hilfe des Felds ``Filter'' kann man die Daten
+bei Bedarf filtern.
+
+In unserem Beispiel wollen wir genau das tun: Wir wollen ja nur die
+prädikativ gebrauchten Instanzen von \emph{(vor)programmiert}
+berücksichtigen. Deshalb ziehen wir ``Hits'' aus dem ``Zeilen''-Feld in
+das ``Filter''-Feld und entfernen es aus dem ``Werte''-Feld, indem wir
+es von da in das Fenster rechts oben ziehen (Fig. \ref{fig:countofhit}).
+Jetzt können wir im Fenster links die nicht-prädikativen Daten
+herausfiltern.
+
+\begin{figure}
+\includegraphics[width=6.36in]{fig/countofhit} \caption{Entfernen einer Spalte aus dem "Werte"-Feld.}\label{fig:countofhit}
+\end{figure}
+
+Nun wollen wir eine tabellarische Übersicht über die Lesarten und die
+Referenz (Objekt vs.~Resultat) bekommen. Dafür ziehen wir die
+entsprechenden Spalten in die Felder ``Zeilen'' und ``Spalten'' - was
+wir in welches Fenster packen, ist eigentlich unwichtig, an den
+Ergebnissen ändert das nichts. Wichtig ist, dass wir nur eine der beide
+Spalten zusätzlich in das Fenster ``Werte'' ziehen. In
+\ref{fig:excelpivot} sehen wir, wie das aussehen kann.
 
 
 \end{document}

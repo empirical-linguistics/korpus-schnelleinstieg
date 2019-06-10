@@ -26,6 +26,7 @@ Sonst gibt es hier nichts zu sehen. Sie können mich gern wieder schließen. Dan
 
 Ein Hinweis vorab: Das Tutorial setzt keine Kenntnisse in der Korpuslinguistik oder im Umgang mit Tabellenkalkulationsprogrammen voraus, wohl aber grammatische Grundkenntnisse. Sollten Sie die Fachbegriffe nicht verstehen, empfehle ich sehr, sie nachzuschlagen und die entsprechenden Wissenslücken zu schließen.
 
+Das Tutorial liegt sowohl im HTML-Format als auch im PDF-Format vor (die PDF-Version können Sie im HTML-Dokument durch Klick auf den PDF-Button ganz oben herunterladen). Die HTML-Version arbeitet viel mit animierten GIFs, die in der PDF-Version natürlich nicht zu sehen sind. Dafür benötigt die PDF-Version weit weniger Speicherplatz.
 
 
 ```{r ccbysa, echo = FALSE, fig.align = 'center', out.width = '30%', out.height = '30%'}

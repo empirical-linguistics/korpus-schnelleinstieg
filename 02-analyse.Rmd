@@ -110,7 +110,7 @@ Um Zeit zu sparen, kann man auch nur einen der beiden Werte annotieren und dann 
 if (knitr:::is_latex_output()) {
   knitr::include_graphics("fig/calc_bulkchange.png", dpi = 450)
 } else {
-  knitr::include_graphics("fig/calc_bulkchange.gif.gif")
+  knitr::include_graphics("fig/calc_bulkchange.gif")
 }
 
 ```
@@ -169,6 +169,37 @@ Nachdem wir nun die Daten annotiert haben, können wir unsere Annotationen quant
 
 Ideal für die Auswertung und Visualisierung in Excel ist die PivotTable-Funktion. Manches an dieser Funktion ist zunächst ein wenig gewöhnungsbedürftig, aber nach kurzer Eingewöhnungszeit ist sie doch halbwegs logisch und intuitiv. 
 
-Stellen Sie zunächst sicher, dass eine Zelle innerhalb der Tabelle angewählt ist (z.B. die Zelle ganz oben links). Jetzt klicken wir im Reiter "Einfügen" auf "PivotTable". Nun öffnet sich ein Fenster, in dem wir gefragt werden, welche Zellen Teil der PivotTable werden sollen (hier sollte Excel bereits automatisch erkannt haben, dass wir die ganze Tabelle einbeziehen wollen, sodass wir nichts mehr ändern müssen) und ob die Tabelle auf dem aktuellen oder einem neuen Arbeitsblatt erstellt werden soll - es empfiehlt sich, sie auf einem neuen Arbeitsblatt zu erstellen, was auch die Default-Option ist. Also können wir einfach OK klicken.
+Stellen Sie zunächst sicher, dass eine Zelle innerhalb der Tabelle angewählt ist (z.B. die Zelle ganz oben links). Jetzt klicken wir im Reiter "Einfügen" auf "PivotTable". Nun öffnet sich ein Fenster, in dem wir gefragt werden, welche Zellen Teil der PivotTable werden sollen (hier sollte Excel bereits automatisch erkannt haben, dass wir die ganze Tabelle einbeziehen wollen, sodass wir nichts mehr ändern müssen) und ob die Tabelle auf dem aktuellen oder einem neuen Arbeitsblatt erstellt werden soll - es empfiehlt sich, sie auf einem neuen Arbeitsblatt zu erstellen, was auch die Default-Option ist. Also können wir einfach OK klicken. In der HTML-Version dieses Tutorials können Sie die einzelnen Schritte in Screencast \@ref(fig:excelpivot) nachverfolgen.
 
-Nun öffnet sich ein neues Arbeitsblatt (mit den Reitern unten können Sie zwischen den Arbeitsblättern navigieren und ihnen ggf. auch aussagekräftigere Namen geben). Wir sehen ein dreigeteiltes Fenster. Im Arbeitsblatt selbst finden wir ein etwas kryptisch aussehendes, noch weitgehend leeres Feld mit einer Beschriftung wie "PivotTable1" o.ä. Das ist quasi der Platzhalter für die noch zu erstellende Tabelle. Rechts sehen wir oben eine Aufstellung der Namen der Tabellenspalten, unten sehen wir ein wiederum viergeteiltes Fenster. In die vier Felder in diesem Fenster können wir nun ausgewählte Spaltennamen aus dem Fenster oben rechts ziehen. Probieren Sie doch einmal, die Spalte "Hit" in das Feld "Zeilen" zu ziehen.
+```{r excelpivot, echo = FALSE, fig.cap="Erstellen einer Pivot-Tabelle in Excel."}
+
+if (knitr:::is_latex_output()) {
+  knitr::include_graphics("fig/excelpivot.png", dpi = 450)
+} else {
+  knitr::include_graphics("fig/excel_pivot.gif")
+}
+
+```
+
+
+Nun öffnet sich ein neues Arbeitsblatt (mit den Reitern unten können Sie zwischen den Arbeitsblättern navigieren und ihnen ggf. auch aussagekräftigere Namen geben). Wir sehen ein dreigeteiltes Fenster. Im Arbeitsblatt selbst finden wir ein etwas kryptisch aussehendes, noch weitgehend leeres Feld mit einer Beschriftung wie "PivotTable1" o.ä. Das ist quasi der Platzhalter für die noch zu erstellende Tabelle. Rechts sehen wir oben eine Aufstellung der Namen der Tabellenspalten, unten sehen wir ein wiederum viergeteiltes Fenster. In die vier Felder in diesem Fenster können wir nun ausgewählte Spaltennamen aus dem Fenster oben rechts ziehen. Probieren Sie doch einmal, die Spalte "Hit" in das Feld "Zeilen" zu ziehen. Jetzt sehen Sie in der Pivot-Tabelle die beiden Zeilen "programmiert" und "vorprogrammiert". Höchstwahrscheinlich ist "Hit" auch automatisch im Fenster "Werte" unten rechts aufgetaucht. Deshalb wird Ihnen in der Pivot-Tabelle auch die Häufigkeit der beiden Varianten angezeigt, wie in \@ref(fig:excelpivotsimple).
+
+
+```{r excelpivotsimple, echo = FALSE, fig.cap="Erstellen einer Pivot-Tabelle in Excel."}
+
+knitr::include_graphics("fig/excel_simplepivot.png", dpi = 400)
+
+```
+
+Die Logik ist also ganz einfach: Was im Feld "Spalten" steht, taucht in den Spalten der Tabelle auf, was im Feld "Zeilen" steht, taucht in den Zeilen auf, und was im Feld "Werte" steht, das wird ausgezählt^[bzw. bei numerischen Werten aufsummiert; hier muss man ggf. aufpassen, dass die richtige Operation gewählt ist. Durch Klick auf das kleine Info-Symbol in den Feldern kann man das bei Bedarf anpassen]. Mit Hilfe des Felds "Filter" kann man die Daten bei Bedarf filtern.
+
+In unserem Beispiel wollen wir genau das tun: Wir wollen ja nur die prädikativ gebrauchten Instanzen von *(vor)programmiert* berücksichtigen. Deshalb ziehen wir "Hits" aus dem "Zeilen"-Feld in das "Filter"-Feld und entfernen es aus dem "Werte"-Feld, indem wir es von da in das Fenster rechts oben ziehen (Fig. \@ref(fig:countofhit)). Jetzt können wir im Fenster links die nicht-prädikativen Daten herausfiltern.
+
+```{r countofhit, echo = FALSE, fig.cap="Entfernen einer Spalte aus dem \"Werte\"-Feld."}
+
+knitr::include_graphics("fig/countofhit.png", dpi = 400)
+
+```
+
+Nun wollen wir eine tabellarische Übersicht über die Lesarten und die Referenz (Objekt vs. Resultat) bekommen. Dafür ziehen wir die entsprechenden Spalten in die Felder "Zeilen" und "Spalten" - was wir in welches Fenster packen, ist eigentlich unwichtig, an den Ergebnissen ändert das nichts. Wichtig ist, dass wir nur eine der beide Spalten zusätzlich in das Fenster "Werte" ziehen. In \@ref(fig:excelpivot) sehen wir, wie das aussehen kann. 
+ 

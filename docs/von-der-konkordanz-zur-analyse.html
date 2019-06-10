@@ -165,7 +165,7 @@ Fig. 3.4: Formatierung der Tabelle in Calc und Setzen eines Filters
 <p>Wir können nun eine neue Spalte rechts von der letzten existierenden Spalte hinzufügen, der wir die Überschrift “praedikativ” geben. (Wir könnten auch problemlos den Umlaut verwenden, aber ich neige dazu, aus Vorsicht alle Sonderzeichen, die Probleme bereiten könnten, wegzulassen.) Hier tragen wir nun für jeden Datenpunkt ein, ob es sich um eine prädikative Verwendung handelt oder nicht. Ich verwende hierfür gern die Werte “y” und “n”, weil sie schön kurz sind. j/n oder ja/nein gehen natürlich auch.</p>
 <p>Um Zeit zu sparen, kann man auch nur einen der beiden Werte annotieren und dann die leeren Zellen einfach auffüllen. Dafür müssen wir zunächst einen Filter setzen, wie in <a href="von-der-konkordanz-zur-analyse.html#fig:calcformat">3.4</a> gezeigt. Über diesen Filter können wir jetzt die leeren Zellen ausblenden, Hier sind die “y”-Werte schon annotiert, alle anderen Zeilen sind leer. Nun filtert man erst die “praedikativ”-Spalte so, dass nur noch die leeren Zellen zu sehen sind, indem man die Zellen mit dem Wert “y” abwählt. Dann markiert man die Spalte “praedikativ” von der ersten bis zur letzten Zeile (die Überschrift wird nicht mitmarkiert). Gibt man nun “n” ein (noch nicht Enter drücken!!), so erscheint der Wert zunächst in der ersten Zeile. Drückt man nun statt der Eingabetaste Alt+Enter, so wird der in der ersten Zeile eingegebene Wert auf alle folgenden Zellen übertragen.</p>
 <div class="figure"><span id="fig:calcbulkchange"></span>
-<img src="fig/calc_bulkchange.gif.gif" alt="Eine Tabellenspalte wird so gefiltert, dass nur noch die leeren Zellen zu sehen sind, und allen leeren Zellen wird mit Alt+Enter derselbe Wert zugewiesen."  />
+<img src="fig/calc_bulkchange.gif" alt="Eine Tabellenspalte wird so gefiltert, dass nur noch die leeren Zellen zu sehen sind, und allen leeren Zellen wird mit Alt+Enter derselbe Wert zugewiesen."  />
 <p class="caption">
 Fig. 3.5: Eine Tabellenspalte wird so gefiltert, dass nur noch die leeren Zellen zu sehen sind, und allen leeren Zellen wird mit Alt+Enter derselbe Wert zugewiesen.
 </p>
@@ -208,12 +208,34 @@ Fig. 3.5: Eine Tabellenspalte wird so gefiltert, dass nur noch die leeren Zellen
 <div id="auswertung-und-visualisierung-in-excel" class="section level3">
 <h3><span class="header-section-number">3.2.1</span> Auswertung und Visualisierung in Excel</h3>
 <p>Ideal für die Auswertung und Visualisierung in Excel ist die PivotTable-Funktion. Manches an dieser Funktion ist zunächst ein wenig gewöhnungsbedürftig, aber nach kurzer Eingewöhnungszeit ist sie doch halbwegs logisch und intuitiv.</p>
-<p>Stellen Sie zunächst sicher, dass eine Zelle innerhalb der Tabelle angewählt ist (z.B. die Zelle ganz oben links). Jetzt klicken wir im Reiter “Einfügen” auf “PivotTable”. Nun öffnet sich ein Fenster, in dem wir gefragt werden, welche Zellen Teil der PivotTable werden sollen (hier sollte Excel bereits automatisch erkannt haben, dass wir die ganze Tabelle einbeziehen wollen, sodass wir nichts mehr ändern müssen) und ob die Tabelle auf dem aktuellen oder einem neuen Arbeitsblatt erstellt werden soll - es empfiehlt sich, sie auf einem neuen Arbeitsblatt zu erstellen, was auch die Default-Option ist. Also können wir einfach OK klicken.</p>
-<p>Nun öffnet sich ein neues Arbeitsblatt (mit den Reitern unten können Sie zwischen den Arbeitsblättern navigieren und ihnen ggf. auch aussagekräftigere Namen geben). Wir sehen ein dreigeteiltes Fenster. Im Arbeitsblatt selbst finden wir ein etwas kryptisch aussehendes, noch weitgehend leeres Feld mit einer Beschriftung wie “PivotTable1” o.ä. Das ist quasi der Platzhalter für die noch zu erstellende Tabelle. Rechts sehen wir oben eine Aufstellung der Namen der Tabellenspalten, unten sehen wir ein wiederum viergeteiltes Fenster. In die vier Felder in diesem Fenster können wir nun ausgewählte Spaltennamen aus dem Fenster oben rechts ziehen. Probieren Sie doch einmal, die Spalte “Hit” in das Feld “Zeilen” zu ziehen.</p>
+<p>Stellen Sie zunächst sicher, dass eine Zelle innerhalb der Tabelle angewählt ist (z.B. die Zelle ganz oben links). Jetzt klicken wir im Reiter “Einfügen” auf “PivotTable”. Nun öffnet sich ein Fenster, in dem wir gefragt werden, welche Zellen Teil der PivotTable werden sollen (hier sollte Excel bereits automatisch erkannt haben, dass wir die ganze Tabelle einbeziehen wollen, sodass wir nichts mehr ändern müssen) und ob die Tabelle auf dem aktuellen oder einem neuen Arbeitsblatt erstellt werden soll - es empfiehlt sich, sie auf einem neuen Arbeitsblatt zu erstellen, was auch die Default-Option ist. Also können wir einfach OK klicken. In der HTML-Version dieses Tutorials können Sie die einzelnen Schritte in Screencast <a href="von-der-konkordanz-zur-analyse.html#fig:excelpivot">3.6</a> nachverfolgen.</p>
+<div class="figure"><span id="fig:excelpivot"></span>
+<img src="fig/excel_pivot.gif" alt="Erstellen einer Pivot-Tabelle in Excel."  />
+<p class="caption">
+Fig. 3.6: Erstellen einer Pivot-Tabelle in Excel.
+</p>
+</div>
+<p>Nun öffnet sich ein neues Arbeitsblatt (mit den Reitern unten können Sie zwischen den Arbeitsblättern navigieren und ihnen ggf. auch aussagekräftigere Namen geben). Wir sehen ein dreigeteiltes Fenster. Im Arbeitsblatt selbst finden wir ein etwas kryptisch aussehendes, noch weitgehend leeres Feld mit einer Beschriftung wie “PivotTable1” o.ä. Das ist quasi der Platzhalter für die noch zu erstellende Tabelle. Rechts sehen wir oben eine Aufstellung der Namen der Tabellenspalten, unten sehen wir ein wiederum viergeteiltes Fenster. In die vier Felder in diesem Fenster können wir nun ausgewählte Spaltennamen aus dem Fenster oben rechts ziehen. Probieren Sie doch einmal, die Spalte “Hit” in das Feld “Zeilen” zu ziehen. Jetzt sehen Sie in der Pivot-Tabelle die beiden Zeilen “programmiert” und “vorprogrammiert”. Höchstwahrscheinlich ist “Hit” auch automatisch im Fenster “Werte” unten rechts aufgetaucht. Deshalb wird Ihnen in der Pivot-Tabelle auch die Häufigkeit der beiden Varianten angezeigt, wie in <a href="von-der-konkordanz-zur-analyse.html#fig:excelpivotsimple">3.7</a>.</p>
+<div class="figure"><span id="fig:excelpivotsimple"></span>
+<img src="fig/excel_simplepivot.png" alt="Erstellen einer Pivot-Tabelle in Excel." width="80" />
+<p class="caption">
+Fig. 3.7: Erstellen einer Pivot-Tabelle in Excel.
+</p>
+</div>
+<p>Die Logik ist also ganz einfach: Was im Feld “Spalten” steht, taucht in den Spalten der Tabelle auf, was im Feld “Zeilen” steht, taucht in den Zeilen auf, und was im Feld “Werte” steht, das wird ausgezählt<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. Mit Hilfe des Felds “Filter” kann man die Daten bei Bedarf filtern.</p>
+<p>In unserem Beispiel wollen wir genau das tun: Wir wollen ja nur die prädikativ gebrauchten Instanzen von <em>(vor)programmiert</em> berücksichtigen. Deshalb ziehen wir “Hits” aus dem “Zeilen”-Feld in das “Filter”-Feld und entfernen es aus dem “Werte”-Feld, indem wir es von da in das Fenster rechts oben ziehen (Fig. <a href="von-der-konkordanz-zur-analyse.html#fig:countofhit">3.8</a>). Jetzt können wir im Fenster links die nicht-prädikativen Daten herausfiltern.</p>
+<div class="figure"><span id="fig:countofhit"></span>
+<img src="fig/countofhit.png" alt="Entfernen einer Spalte aus dem &quot;Werte&quot;-Feld." width="610" />
+<p class="caption">
+Fig. 3.8: Entfernen einer Spalte aus dem “Werte”-Feld.
+</p>
+</div>
+<p>Nun wollen wir eine tabellarische Übersicht über die Lesarten und die Referenz (Objekt vs. Resultat) bekommen. Dafür ziehen wir die entsprechenden Spalten in die Felder “Zeilen” und “Spalten” - was wir in welches Fenster packen, ist eigentlich unwichtig, an den Ergebnissen ändert das nichts. Wichtig ist, dass wir nur eine der beide Spalten zusätzlich in das Fenster “Werte” ziehen. In <a href="von-der-konkordanz-zur-analyse.html#fig:excelpivot">3.6</a> sehen wir, wie das aussehen kann.</p>
 
 </div>
 </div>
 </div>
+
 
 
 
@@ -224,6 +246,7 @@ Fig. 3.5: Eine Tabellenspalte wird so gefiltert, dass nur noch die leeren Zellen
 <hr />
 <ol start="1">
 <li id="fn1"><p>Der Vollständigkeit halber sei darauf hingewiesen, dass es sich dabei um eine Post-hoc-Analyse handelt. Wenn Sie sich ein wenig in die Wissenschaftsphilosophie einlesen, werden Sie merken, dass so etwas nicht unumstritten ist: Oft gilt es als Ideal, sämtliche Hypothesen und Analysemethoden im Voraus festzulegen, bevor man sich den Daten selbst zuwendet. <em>Post hoc</em> aufgestellte Hypothesen müsste man dann eigentlich anhand von neuen Daten überprüfen. De facto ist es freilich oft so, dass für so ein rigides Vorgehen Zeit und Ressourcen fehlen. Gerade bei einer Seminararbeit können Sie diesen Punkt natürlich in aller Regel getrost ignorieren.<a href="von-der-konkordanz-zur-analyse.html#fnref1">↩</a></p></li>
+<li id="fn2"><p>bzw. bei numerischen Werten aufsummiert; hier muss man ggf. aufpassen, dass die richtige Operation gewählt ist. Durch Klick auf das kleine Info-Symbol in den Feldern kann man das bei Bedarf anpassen<a href="von-der-konkordanz-zur-analyse.html#fnref2">↩</a></p></li>
 </ol>
 </div>
             </section>
