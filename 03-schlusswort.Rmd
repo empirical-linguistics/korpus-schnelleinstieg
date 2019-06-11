@@ -26,6 +26,9 @@ Das führt uns zur Methodenkritik: Wie belastbar sind unsere Ergebnisse? Hier is
 
 <details>
 <summary>‣ **Zur Stichprobengröße**</summary>
+
+Zur Frage nach der Stichprobengröße zitiere ich mich ausnahmsweise mal selbst:
+
 > Die wahrscheinlich am häufigsten gestellte Frage von Studierenden, die zum ersten Mal korpuslinguistisch arbeiten, ist: „Wie groß muss meine Stichprobe sein?“ Darauf gibt es leider keine pauschale Antwort. Es gibt keine feste Untergrenze, ab der eine Stichprobe repräsentativ ist (zumal es „echte“ Repräsentativität in dem Sinne, dass die Stichprobe ein ganz genaues Abbild der Grundgesamtheit, nur eben im Kleinen, darstellt, ohnehin nicht geben kann). 
 Die Wahl der Stichprobengröße ist also von mehreren ganz praktischen Faktoren abhängig, unter anderem: 
 
@@ -60,7 +63,7 @@ Das Stichwort "statistische Methoden" bringt uns zu einem weiteren Punkt, den wi
 <details>
 <summary>‣ **Zum Weiterlesen: Statistik für LinguistInnen**</summary>
 
-Hier eine Auswahl an deutsch- und englischsprachigen Einführungswerken in die Statistik, die sich explizit an Linguist*innen richten:
+Hier eine Auswahl an deutsch- und englischsprachigen Einführungswerken in die Statistik, die sich explizit an Linguist*innen richten (chronologisch geordnet):
 
 - Desagulier, Guillaume. 2017. Corpus linguistics and statistics with R: introduction to quantitative methods in linguistics. New York, NY: Springer.
 
@@ -68,7 +71,11 @@ Hier eine Auswahl an deutsch- und englischsprachigen Einführungswerken in die S
 
 - Gries, Stefan Th. 2013. Statistics for Linguistics with R: A Practical Introduction. 2nd ed. Berlin, New York: De Gruyter.
 
+- Meindl, Claudia. 2011. Methodik für Linguisten: Eine Einführung in Statistik und Versuchsplanung. Tübingen: Narr.
+
 - Baayen, R. H. 2008. Analyzing Linguistic Data. A Practical Introduction to Statistics using R. Cambridge: Cambridge University Press.
+
+- Butler, Christopher. 1985. Statistics in Linguistics. Oxford: Blackwell.
 
 </details>
 
