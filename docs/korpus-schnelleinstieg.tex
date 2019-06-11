@@ -83,7 +83,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-06-10}
+    \date{2019-06-11}
 
 \renewcommand{\figurename}{Fig.}
 \renewcommand{\contentsname}{Inhalt}
@@ -104,14 +104,27 @@ Seminararbeit eine Korpusrecherche durchführen möchten, aber bislang
 noch keine praktische Erfahrung mit korpuslinguistischen Methoden
 sammeln konnten. Das Tutorial bietet anhand eines konkreten Beispiels
 eine Schritt-für-Schritt-Anleitung, wie man von der Fragestellung zur
-Datengewinnung hin zur Analyse der Daten gelangen kann.
+Datengewinnung hin zur Analyse der Daten gelangen kann. Dabei nutzen wir
+folgende Ressourcen bzw. Programme:
+
+\begin{itemize}
+\item
+  Das Kernkorpus des 20. Jahrhunderts des Digitalen Wörterbuchs der
+  Deutschen Sprache, verfügbar über 
+\item
+  ein Tabellenkalkulationsprogramm, wobei alle wesentlichen
+  Arbeitsschritte sowohl für Microsoft Excel als auch für die kostenlose
+  Alternative LibreOffice Calc beschrieben werden. Es genügt natürlich,
+  wenn Sie mit einem der beiden Programme arbeiten; die Abschnitte zum
+  jeweils anderen Programm können Sie dann getrost überspringen.
+\end{itemize}
 
 Um wirklich einen Schnelleinstieg bieten zu können, muss ich
 notwendigerweise vieles vereinfachen. Für Ihre konkrete Korpusstudie
 werden Sie daher wahrscheinlich nicht umhinkommen, sich an der einen
-oder anderen Stelle tiefer einzulesen. Dafür verweise ich im Text immer
-wieder auf weiterführende Ressourcen. Teilweise finden sich auch in
-diesem Tutorial vertiefende Passagen, die Sie (in der HTML-Version)
+oder anderen Stelle tiefer einzulesen. Dafür verweise ich im Text
+gelegentlich auf weiterführende Ressourcen. Teilweise finden sich auch
+in diesem Tutorial vertiefende Passagen, die Sie (in der HTML-Version)
 aufklappen können:
 
  ‣ \textbf{klick mich}
@@ -127,11 +140,20 @@ voraus, wohl aber grammatische Grundkenntnisse. Sollten Sie die
 Fachbegriffe nicht verstehen, empfehle ich sehr, sie nachzuschlagen und
 die entsprechenden Wissenslücken zu schließen.
 
-Das Tutorial liegt sowohl im HTML-Format als auch im PDF-Format vor (die
-PDF-Version können Sie im HTML-Dokument durch Klick auf den PDF-Button
-ganz oben herunterladen). Die HTML-Version arbeitet viel mit animierten
-GIFs, die in der PDF-Version natürlich nicht zu sehen sind. Dafür
-benötigt die PDF-Version weit weniger Speicherplatz.
+Und noch ein Hinweis: Das Tutorial liegt sowohl im HTML-Format als auch
+im PDF-Format vor (die PDF-Version können Sie im HTML-Dokument durch
+Klick auf den PDF-Button ganz oben herunterladen). Die HTML-Version
+arbeitet viel mit animierten GIFs, die in der PDF-Version natürlich
+nicht zu sehen sind. Dafür benötigt die PDF-Version weit weniger
+Speicherplatz.
+
+Ein letzter Hinweis: Da ich aus Gründen, die hier auszuführen zu viel
+Platz wegnehmen würde, mit den englischen Versionen von Excel und Calc
+arbeite, sehen Sie in den Screenshots und Screencasts immer die
+englischen Varianten der einschlägigen Befehle. Im Text nenne ich
+teilweise die deutsche Übersetzung, ohne aber in jedem Einzelfall
+geprüft zu haben, ob das auch wirklich die Übersetzung ist, die in den
+deutschen Versionen der Programme verwendet wird.
 
 \begin{center}\includegraphics[width=0.3\linewidth,height=0.3\textheight]{docs/fig/by-sa} \end{center}
 
@@ -458,14 +480,13 @@ treffen, sich gut begründen lässt und konsequent durchgehalten wird.
 
 Wie setzen wir die Annotation nun in unserer Tabelle um? Auch hier zeige
 ich wieder Wege für \protect\hyperlink{umsetzung-in-excel}{Excel} und
-\protect\hyperlink{umsetzung-in-libreoffice-calc}{Calc}. Gerade die
-unten skizzierte Möglichkeit, Daten als ``Tabelle'' zu formatieren,
-finde ich persönlich an Excel sehr hilfreich, weshalb ich Excel i.d.R.
-bevorzuge. Allerdings halte ich es auch für wichtig, sich in der
-Wissenschaft nicht von proprietärer Software oder proprietären
-Datenformaten abhängig zu machen, und nicht jede Uni hat eine
-Office-Lizenz - deshalb zeige ich auch den Weg mit der freien
-Alternative auf.
+\protect\hyperlink{umsetzung-in-calc}{Calc}. Gerade die unten skizzierte
+Möglichkeit, Daten als ``Tabelle'' zu formatieren, finde ich persönlich
+an Excel sehr hilfreich, weshalb ich Excel i.d.R. bevorzuge. Allerdings
+halte ich es auch für wichtig, sich in der Wissenschaft nicht von
+proprietärer Software oder proprietären Datenformaten abhängig zu
+machen, und nicht jede Uni hat eine Office-Lizenz - deshalb zeige ich
+auch den Weg mit der freien Alternative auf.
 
 \hypertarget{umsetzung-in-excel}{\paragraph{Umsetzung in
 Excel}\label{umsetzung-in-excel}}
@@ -552,8 +573,8 @@ Wenn wir nun den Filter herausnehmen, sehen wir, dass nun alle vorher
 leeren Zeilen ein ``n'' haben, während alle Zeilen mit ``y'' unverändert
 geblieben sind.
 
-\hypertarget{umsetzung-in-libreoffice-calc}{\paragraph{Umsetzung in
-LibreOffice Calc}\label{umsetzung-in-libreoffice-calc}}
+\hypertarget{umsetzung-in-calc}{\paragraph{Umsetzung in
+Calc}\label{umsetzung-in-calc}}
 
 In Calc empfiehlt es sich, zunächst einmal die Spaltenbreite anzupassen
 und nicht benötigte Spalten auszublenden (nicht löschen - im
@@ -866,24 +887,40 @@ eine Möglichkeit, das umzusetzen:
 \includegraphics[width=6.66in]{docs/fig/excel_visualize} \caption{Erstellen eines Balkendiagramms aus einer Pivot-Tabelle in Excel.}\label{fig:excelvisualize}
 \end{figure}
 
-Damit die Grafik nicht so asymmetrisch aussieht wie Fig.
-\ref{fig:asymmetric}, werden zunächst die Feldeinstellungen so
-verändert, dass auch Felder mit Null-Werten angezeigt werden.
-Anschließend wird ein Balkendiagramm ausgewählt, das den prozentualen
-Anteil der jeweiligen Variante darstellt. Durch Rechtsklick auf die
-Balken kann man außerdem noch ``Data Labels'' hinzufügen, d.h. die
-absoluten Werte in den Balken darstellen lassen. Das ist empfehlenswert,
-weil so die Leserin oder der Leser schnell einen Eindruck gewinnen kann,
-wie groß die Datenbasis ist, auf der die Darstellung basiert - denn es
-macht ja schon einen gewichtigen Unterschied, ob eine Verteilung wie,
-sagen wir 10\% : 90\% auf zehn, auf hundert oder auf tausend
-Datenpunkten basiert!
+Welche Daten auf der x- und auf der y-Achse dargestellt und welche
+innerhalb der Balken farblich kodiert werden, hängt davon ab, welche
+Daten in der Pivot-Tabelle in den Zeilen und in den Spalten stehen.
+Gegebenenfalls kann man hier noch ein paar Änderungen vornehmen, um die
+Darstellung sinnvoller zu gestalten. So entsteht in Fig.
+\ref{fig:excelvisualize} ein Diagramm, bei dem die Variante
+(\emph{programmiert} vs. \emph{vorprogrammiert}) farblich kodiert wird.
+Das ist nicht unbedingt sinnvoll, weil wir ja wissen wollen, wie sich
+die Verteilung der unterschiedlichen Lesarten zwischen den beiden
+Varianten unterscheidet. Man kann die visuelle Darstellung auch in dem
+``Pivot Chart Fields''-Feld ändern, das sich bei der Erstellung des
+Balkendiagramms geöffnet haben dürfte (\ref{fig:pivotchartfields}).
 
 \begin{figure}
-\centering
-\includegraphics{docs/fig/excel_graph_asymmetric.pdf}
-\caption{\label{fig:asymmetric}Balkendiagramm, in dem nicht belegte
-Variablenausprägungen ausgelassen werden.}
+\includegraphics[width=4.49in]{docs/fig/excel_pivotchartfields} \caption{Der Dialog "Pivot Chart Fields" (rechts) erlaubt es, anzupassen, was wo in der Grafik dargestellt wird.}\label{fig:pivotchartfields}
+\end{figure}
+
+Und noch etwas Feinjustierung: Damit die Grafik nicht so asymmetrisch
+aussieht wie Fig. \ref{fig:asymmetric}, werden (im ersten Schritt in
+\ref{fig:excelvisualize}) zunächst die Feldeinstellungen so verändert,
+dass auch Felder mit Null-Werten angezeigt werden. Anschließend wird ein
+Balkendiagramm ausgewählt, das den prozentualen Anteil der jeweiligen
+Variante darstellt. Durch Rechtsklick auf die Balken kann man außerdem
+noch ``Data Labels'' hinzufügen, d.h. die absoluten Werte in den Balken
+darstellen lassen. Das ist empfehlenswert, weil so die Leserin oder der
+Leser schnell einen Eindruck gewinnen kann, wie groß die Datenbasis ist,
+auf der die Darstellung basiert - denn es macht ja schon einen
+gewichtigen Unterschied, ob eine Verteilung wie, sagen wir 10\% : 90\%
+auf zehn, auf hundert oder auf tausend Datenpunkten basiert! Die ``Data
+Labels'' kann man hinzufügen durch Rechtsklick auf die Balken und Klick
+auf den Punkt ``Show data labels''.
+
+\begin{figure}
+\includegraphics[width=3.32in]{docs/fig/excel_asymmetric} \caption{Balkendiagramm, in dem nicht belegte Variablenausprägungen ausgelassen werden.}\label{fig:asymmetric}
 \end{figure}
 
 \subsubsection{Auswertung und Visualisierung in
@@ -903,6 +940,62 @@ fields''-Feld.
 
 \begin{figure}
 \includegraphics[width=6.66in]{docs/fig/calc_pivot} \caption{Erstellen einer Pivot-Tabelle in Calc.}\label{fig:calcpivot}
+\end{figure}
+
+Beim Erstellen der Pivot-Tabelle können wir in den ausklappbaren
+Optionen auch auswählen, dass wir keine Zeilen- und Spaltensummen sehen
+wollen (die brauchen wir nicht, zumal sie dann ggf. auch in den auf der
+Tabelle basierenden Visualisierungen dargestellt werden und da nur
+verwirren), aber dass wir Filter setzen möchten. Wenn wir nun auf OK
+klicken, sehen wir die Pivot-Tabelle, oberhalb derer sich ein
+``Filter''-Feld befindet, auf das wir doppelklicken können, um durch
+Auswählen des Attribut-Wert-Paars ``praedikativ = y'' die Tabelle so zu
+filtern, dass nur die prädikativen Belege angezeigt werden.
+
+Mit Hilfe der Tabelle können wir nun die Verteilung auch visualisiern,
+z.B. mit einem Balkendiagramm.\footnote{Vgl. jedoch den Caveat in der
+  vorherigen Fußnote.} Das ist über Insert \textgreater{} Chart möglich.
+Hier haben wir die Wahl zwischen mehreren Optionen und wählen ein sog.
+gestapeltes Balkendiagramm, das die prozentuale Verteilung anzeigt. Die
+einzelnen Schritte sind in \ref{fig:calcchart} dargestellt.
+
+\begin{figure}
+\includegraphics[width=6.66in]{docs/fig/calc_chart} \caption{Erstellen einer Pivot-Tabelle in Calc.}\label{fig:calcchart}
+\end{figure}
+
+Im Gegensatz zu Excel bietet Calc derzeit leider keine Möglichkeit, sich
+in Pivot-Tabellen Nullwerte anzeigen zu lassen. Das heißt, wenn wir im
+Balkendiagramm die Kategorien ``lit'' und ``unklar'' auch für
+\emph{vorpgrammiert} sehen wollen, um das Diagramm symmetrisch zu
+halten, müssen wir sie irgendwie manuell einfügen, weil für
+\emph{vorprogrammiert} ja nur metaphorische Lesarten belegt sind. Einen
+sehr uneleganten, aber funktionierenden Workaround zeigt
+\ref{fig:calcchart2}: Weil wir an der Pivot-Tabelle selbst nichts
+verändern können, copy\&pasten wir sie an eine andere Stelle im
+Arbeitsblatt und ergänzen die fehlenden Kategorien manuell. Das ist
+zwar, wie es ein User in einem Frage-und-Antwort-Forum zu diesem Thema
+sehr schön formuliert hat, weniger eine Lösung als eine Kapitulation,
+aber zumindest für diesen recht überschaubaren Datensatz funktioniert
+der Ansatz.
+
+\begin{figure}
+\includegraphics[width=6.66in]{docs/fig/calc_chart2} \caption{Erstellen einer Pivot-Tabelle in Calc.}\label{fig:calcchart2}
+\end{figure}
+
+Zuletzt wollen wir die Balken noch mit Labels versehen, d.h. wir wollen
+die absoluten Werte auf den Balken anzeigen. Auch hier kann Excel etwas
+mehr als Calc, und wir müssen etwas tricksen, um die absoluten Werte
+anzeigen zu lassen. Mit Rechtsklick auf einen der Balken \textgreater{}
+Insert Data Labels können wir zunächst die Labels anzeigen lassen, sehen
+aber erstens keine absoluten Werte, sondern Prozentwerte, und zweitens
+absurde Prozentwerte, weil Calc offenbar die Zahlen in der Tabelle für
+relative Werte hält. Mit Doppelklick auf eines der Labels können wir
+jedoch das Zahlenformat ändern und angeben, dass wir die Labels einfach
+als ``Text'' angezeigt bekommen wollen - also einfach das, was in der
+Pivot-Tabelle selbst steht (s. Fig. \ref{fig:calcdatalabels}).
+
+\begin{figure}
+\includegraphics[width=6.66in]{docs/fig/calc_datalabels} \caption{Einfügen von Data labels in Calc.}\label{fig:calcdatalabels}
 \end{figure}
 
 
