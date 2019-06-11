@@ -134,7 +134,7 @@ Wenn wir nun wörtlichen und metaphorischen Gebrauch annotieren wollen, könnten
 
 3. Geht aus dem Kontext nicht hervor, worauf genau sich "(vor)programmiert" ist, wird der Beleg als unklar gewertet.
 
-Auf diesen Kriterien aufbauend können wir nun eine neue Spalte in unserer Tabelle eröffnen, die wir z.B. "Lesart" nennen können. Hier vergeben wir die Werte "lit" (literal/wörtlich), "met" (metaphorisch) und "unklar". Gerne können Sie es einmal versuchen und Ihre Ergebnisse dann mit meinen (in den .xlsx- und .ods-Dateien im "data"-Ordner) vergleichen.
+Auf diesen Kriterien aufbauend können wir nun eine neue Spalte in unserer Tabelle eröffnen, die wir z.B. "Lesart" nennen können. Hier vergeben wir die Werte "lit" (literal/wörtlich), "met" (metaphorisch) und "unklar". Gerne können Sie es einmal versuchen und Ihre Ergebnisse dann mit meinen (in den .xlsx- und .ods-Dateien im <a href="https://github.com/empirical-linguistics/korpus-schnelleinstieg/tree/master/data" target="_blank">"data"-Ordner</a>) vergleichen.
 
 Der große Vorteil der oben formulierten Annotationskriterien ist, dass sie sich in den meisten Fällen relativ zweifelsfrei anwenden lassen. Jedoch zeigt sich beim Durchgehen der konkreten Belege, dass die binäre Unterscheidung "wörtlich/metaphorisch" dem Gebrauch von *(vor)programmiert* möglicherweise nicht ganz gerecht wird. So fallen die folgenden Beispiele alle in die "metaphorische" Kategorie:
 
@@ -156,7 +156,7 @@ Auch hierfür formulieren wir wieder Annotationskriterien:
 
 3. Lässt sich keine eindeutige Entscheidung treffen, bekommt der Beleg den Wert "unklar".
 
-In den .xlsx- und .odt-Dateien im "data"-Ordner habe ich das in der Spalte "Referenz" umgesetzt. Auch hier können Sie gern die Probe aufs Exempel machen und überprüfen, ob Ihre Annotationen mit meinen übereinstimmen. Wahrscheinlich werden Sie im einen oder anderen Fall andere Entscheidungen treffen als ich - das ist ganz normal und auch der Grund dafür, warum man idealerweise mindestens zwei Personen unabhängig voneinander annotieren lassen und dann die Annotationen vergleichen sollte. (De facto ist das natürlich gerade bei einer Seminararbeit häufig nicht möglich).
+In den .xlsx- und .odt-Dateien im <a href="https://github.com/empirical-linguistics/korpus-schnelleinstieg/tree/master/data" target="_blank">"data"-Ordner</a> habe ich das in der Spalte "Referenz" umgesetzt. Auch hier können Sie gern die Probe aufs Exempel machen und überprüfen, ob Ihre Annotationen mit meinen übereinstimmen. Wahrscheinlich werden Sie im einen oder anderen Fall andere Entscheidungen treffen als ich - das ist ganz normal und auch der Grund dafür, warum man idealerweise mindestens zwei Personen unabhängig voneinander annotieren lassen und dann die Annotationen vergleichen sollte. (De facto ist das natürlich gerade bei einer Seminararbeit häufig nicht möglich).
 
 
 
