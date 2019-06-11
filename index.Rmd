@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Ziel dieses Tutorials ist es, Anfänger*innen einen möglichst niedrigschwelligen Einstieg in einfache Korpusanalysen zu ermöglichen. Es ist insbesondere für Studierende gedacht, die z.B. für eine Seminararbeit eine Korpusrecherche durchführen möchten, aber bislang noch keine praktische Erfahrung mit korpuslinguistischen Methoden sammeln konnten. Das Tutorial bietet anhand eines konkreten Beispiels eine Schritt-für-Schritt-Anleitung, wie man von der Fragestellung zur Datengewinnung hin zur Analyse der Daten gelangen kann. Dabei nutzen wir folgende Ressourcen bzw. Programme:
 
-- Das Kernkorpus des 20. Jahrhunderts des Digitalen Wörterbuchs der Deutschen Sprache, verfügbar über <a href="https://dwds.de/" target="_blank">
+- Das Kernkorpus des 20. Jahrhunderts des Digitalen Wörterbuchs der Deutschen Sprache, verfügbar über <a href="https://dwds.de/" target="_blank">dwds.de</a>.
 
 - ein Tabellenkalkulationsprogramm, wobei alle wesentlichen Arbeitsschritte sowohl für Microsoft Excel als auch für die kostenlose Alternative LibreOffice Calc beschrieben werden. Es genügt natürlich, wenn Sie mit einem der beiden Programme arbeiten; die Abschnitte zum jeweils anderen Programm können Sie dann getrost überspringen.
 
