@@ -185,7 +185,7 @@ if (knitr:::is_latex_output()) {
 Nun öffnet sich ein neues Arbeitsblatt (mit den Reitern unten können Sie zwischen den Arbeitsblättern navigieren und ihnen ggf. auch aussagekräftigere Namen geben). Wir sehen ein dreigeteiltes Fenster. Im Arbeitsblatt selbst finden wir ein etwas kryptisch aussehendes, noch weitgehend leeres Feld mit einer Beschriftung wie "PivotTable1" o.ä. Das ist quasi der Platzhalter für die noch zu erstellende Tabelle. Rechts sehen wir oben eine Aufstellung der Namen der Tabellenspalten, unten sehen wir ein wiederum viergeteiltes Fenster. In die vier Felder in diesem Fenster können wir nun ausgewählte Spaltennamen aus dem Fenster oben rechts ziehen. Probieren Sie doch einmal, die Spalte "Hit" in das Feld "Zeilen" zu ziehen. Jetzt sehen Sie in der Pivot-Tabelle die beiden Zeilen "programmiert" und "vorprogrammiert". Höchstwahrscheinlich ist "Hit" auch automatisch im Fenster "Werte" unten rechts aufgetaucht. Deshalb wird Ihnen in der Pivot-Tabelle auch die Häufigkeit der beiden Varianten angezeigt, wie in \@ref(fig:excelpivotsimple).
 
 
-```{r excelpivotsimple, echo = FALSE, fig.cap="Eine Pivot-Tabelle in Excel.."}
+```{r excelpivotsimple, echo = FALSE, fig.cap="Eine Pivot-Tabelle in Excel."}
 
 knitr::include_graphics("docs/fig/excel_simplepivot.png", dpi = 300)
 
