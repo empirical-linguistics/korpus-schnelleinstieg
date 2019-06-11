@@ -235,11 +235,11 @@ Fig. 3.7: Eine Pivot-Tabelle in Excel..
 Fig. 3.8: Entfernen einer Spalte aus dem “Werte”-Feld.
 </p>
 </div>
-<p>Dann ziehen wir die Spalte “prädikativ” in das Feld “Filter”. Jetzt können wir im Fenster links die nicht-prädikativen Daten herausfiltern (s. Fig. <a href="von-der-konkordanz-zur-analyse.html#fig:praedikativfilter">3.9</a>.</p>
+<p>Dann ziehen wir die Spalte “prädikativ” in das Feld “Filter”. Jetzt können wir im Fenster links die nicht-prädikativen Daten herausfiltern (s. Fig. <a href="von-der-konkordanz-zur-analyse.html#fig:praedikativfilter">3.9</a>).</p>
 <div class="figure"><span id="fig:praedikativfilter"></span>
-<img src="docs/fig/praedikativ_filter.png" alt="Entfernen einer Spalte aus dem &quot;Werte&quot;-Feld." width="603" />
+<img src="docs/fig/praedikativ_filter.png" alt="Herausfiltern der Daten mit &quot;praedikativ=n&quot;." width="603" />
 <p class="caption">
-Fig. 3.9: Entfernen einer Spalte aus dem “Werte”-Feld.
+Fig. 3.9: Herausfiltern der Daten mit “praedikativ=n”.
 </p>
 </div>
 <p>Nun wollen wir eine tabellarische Übersicht über die Lesarten und die Referenz (Objekt vs. Resultat) getrennt nach den beiden Varianten “programmiert” und “vorprogrammiert” bekommen. Führen wir uns noch einmal vor Augen, was die dafür relevanten Tabellenspalten sind:</p>
@@ -297,9 +297,9 @@ Fig. 3.15: Erstellen einer Pivot-Tabelle in Calc.
 </div>
 <p>Im Gegensatz zu Excel bietet Calc derzeit leider keine Möglichkeit, sich in Pivot-Tabellen Nullwerte anzeigen zu lassen. Das heißt, wenn wir im Balkendiagramm die Kategorien “lit” und “unklar” auch für <em>vorpgrammiert</em> sehen wollen, um das Diagramm symmetrisch zu halten, müssen wir sie irgendwie manuell einfügen, weil für <em>vorprogrammiert</em> ja nur metaphorische Lesarten belegt sind. Einen sehr uneleganten, aber funktionierenden Workaround zeigt <a href="von-der-konkordanz-zur-analyse.html#fig:calcchart2">3.16</a>: Weil wir an der Pivot-Tabelle selbst nichts verändern können, copy&amp;pasten wir sie an eine andere Stelle im Arbeitsblatt und ergänzen die fehlenden Kategorien manuell. Das ist zwar, wie es ein User in einem Frage-und-Antwort-Forum zu diesem Thema sehr schön formuliert hat, weniger eine Lösung als eine Kapitulation, aber zumindest für diesen recht überschaubaren Datensatz funktioniert der Ansatz.</p>
 <div class="figure"><span id="fig:calcchart2"></span>
-<img src="docs/fig/calc_chart2.gif" alt="Erstellen einer Pivot-Tabelle in Calc."  />
+<img src="docs/fig/calc_chart2.gif" alt="Erstellen einer Pivot-Tabelle mit Nullwerten in Calc (Workaround)."  />
 <p class="caption">
-Fig. 3.16: Erstellen einer Pivot-Tabelle in Calc.
+Fig. 3.16: Erstellen einer Pivot-Tabelle mit Nullwerten in Calc (Workaround).
 </p>
 </div>
 <p>Zuletzt wollen wir die Balken noch mit Labels versehen, d.h. wir wollen die absoluten Werte auf den Balken anzeigen. Auch hier kann Excel etwas mehr als Calc, und wir müssen etwas tricksen, um die absoluten Werte anzeigen zu lassen. Mit Rechtsklick auf einen der Balken &gt; Insert Data Labels können wir zunächst die Labels anzeigen lassen, sehen aber erstens keine absoluten Werte, sondern Prozentwerte, und zweitens absurde Prozentwerte, weil Calc offenbar die Zahlen in der Tabelle für relative Werte hält. Mit Doppelklick auf eines der Labels können wir jedoch das Zahlenformat ändern und angeben, dass wir die Labels einfach als “Text” angezeigt bekommen wollen - also einfach das, was in der Pivot-Tabelle selbst steht (s. Fig. <a href="von-der-konkordanz-zur-analyse.html#fig:calcdatalabels">3.17</a>).</p>
