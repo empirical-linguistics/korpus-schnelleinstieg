@@ -83,10 +83,26 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-06-11}
+    \date{2019-06-13}
+
+\usepackage[none]{hyphenat}
 
 \renewcommand{\figurename}{Fig.}
 \renewcommand{\contentsname}{Inhalt}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
 
 \begin{document}
 \maketitle
@@ -1078,6 +1094,9 @@ möglicherweise besser ein anderes Korpus wählen sollten.
 
  ‣ \textbf{Zur Stichprobengröße}
 
+Zur Frage nach der Stichprobengröße zitiere ich mich ausnahmsweise mal
+selbst:
+
 \begin{quote}
 Die wahrscheinlich am häufigsten gestellte Frage von Studierenden, die
 zum ersten Mal korpuslinguistisch arbeiten, ist: „Wie groß muss meine
@@ -1136,6 +1155,7 @@ mit einbeziehen kann.
 
 \caption{\label{tab:textverteilung}Texte in der Konkordanz, die mehr als einen Beleg für (vor)programmiert enthalten}
 \centering
+\resizebox{\linewidth}{!}{
 \begin{tabular}{lr}
 \toprule
 Text & Belege\\
@@ -1152,7 +1172,7 @@ Ketman, Per u. Wissmach, Andreas: DDR - ein Reisebuch in den Alltag, Reinbek bei
 Loriot [d.i. Vicco von Bülow]: Sehr verehrte Damen und Herren ..., Zürich: Diogenes 1993 & 2\\
 Wilberg, Gerlinde M.: Zeit für uns, München: Frauenbuchverl. 1979 & 2\\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 Das Stichwort ``statistische Methoden'' bringt uns zu einem weiteren

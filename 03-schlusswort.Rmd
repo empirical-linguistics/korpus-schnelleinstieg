@@ -51,9 +51,22 @@ x$Bibl2 <- gsub(", S.*", "", x$Bibl)
 y <- as.data.frame(sort(table(x$Bibl2), decreasing = T))
 colnames(y) <- c("Text", "Belege")
 y <- subset(y, Belege > 1)
-knitr::kable(y,
+
+
+if(knitr::is_latex_output()) {
+  library(kableExtra)
+    knitr::kable(y,
+             caption = "Texte in der Konkordanz, die mehr als einen Beleg für (vor)programmiert enthalten", format = "latex",
+             booktabs = TRUE) %>% kable_styling(latex_options="scale_down")
+
+} else {
+    knitr::kable(y,
              caption = "Texte in der Konkordanz, die mehr als einen Beleg für (vor)programmiert enthalten",
              booktabs = TRUE)
+
+}
+
+
 
 
 ```
