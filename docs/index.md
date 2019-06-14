@@ -1,0 +1,44 @@
+---
+title: "Einfache Korpusanalysen: Ein Schnelleinstieg"
+author: "Stefan Hartmann"
+date: "2019-06-14"
+---
+
+
+
+
+# Einstieg
+
+Ziel dieses Tutorials ist es, Anfänger*innen einen möglichst niedrigschwelligen Einstieg in einfache Korpusanalysen zu ermöglichen. Es ist insbesondere für Studierende gedacht, die z.B. für eine Seminararbeit eine Korpusrecherche durchführen möchten, aber bislang noch keine praktische Erfahrung mit korpuslinguistischen Methoden sammeln konnten. Das Tutorial bietet anhand eines konkreten Beispiels eine Schritt-für-Schritt-Anleitung, wie man von der Fragestellung zur Datengewinnung hin zur Analyse der Daten gelangen kann. Dabei nutzen wir folgende Ressourcen bzw. Programme:
+
+- Das Kernkorpus des 20. Jahrhunderts des Digitalen Wörterbuchs der Deutschen Sprache, verfügbar über <a href="https://dwds.de/" target="_blank">dwds.de</a>.
+
+- ein Tabellenkalkulationsprogramm, wobei alle wesentlichen Arbeitsschritte sowohl für Microsoft Excel als auch für die kostenlose Alternative LibreOffice Calc beschrieben werden. Es genügt natürlich, wenn Sie mit einem der beiden Programme arbeiten; die Abschnitte zum jeweils anderen Programm können Sie dann getrost überspringen.
+
+Um wirklich einen Schnelleinstieg bieten zu können, muss ich notwendigerweise vieles vereinfachen. Für Ihre konkrete Korpusstudie werden Sie daher wahrscheinlich nicht umhinkommen, sich an der einen oder anderen Stelle tiefer einzulesen. Dafür verweise ich im Text gelegentlich auf weiterführende Ressourcen. Teilweise finden sich auch in diesem Tutorial vertiefende Passagen, die Sie (in der HTML-Version) aufklappen können:
+
+<details>
+<summary>‣ **klick mich**</summary>
+
+Hallo, ich bin eine vertiefende Passage.
+
+Sonst gibt es hier nichts zu sehen. Sie können mich gern wieder schließen. Danke.
+
+</details>
+
+Ein Hinweis vorab: Das Tutorial setzt keine Kenntnisse in der Korpuslinguistik oder im Umgang mit Tabellenkalkulationsprogrammen voraus, wohl aber grammatische Grundkenntnisse. Sollten Sie die Fachbegriffe nicht verstehen, empfehle ich sehr, sie nachzuschlagen und die entsprechenden Wissenslücken zu schließen.
+
+Und noch ein Hinweis: Das Tutorial liegt sowohl im HTML-Format als auch im PDF-Format vor (die PDF-Version können Sie im HTML-Dokument durch Klick auf den PDF-Button ganz oben herunterladen). Die HTML-Version arbeitet viel mit animierten GIFs, die in der PDF-Version natürlich nicht zu sehen sind. Dafür benötigt die PDF-Version weit weniger Speicherplatz.
+
+Ein letzter Hinweis: Da ich aus Gründen, die hier auszuführen zu viel Platz wegnehmen würde, mit den englischen Versionen von Excel und Calc arbeite, sehen Sie in den Screenshots und Screencasts immer die englischen Varianten der einschlägigen Befehle. Im Text nenne ich teilweise die deutsche Übersetzung, ohne aber in jedem Einzelfall geprüft zu haben, ob das auch wirklich die Übersetzung ist, die in den deutschen Versionen der Programme verwendet wird.
+
+
+<img src="docs/fig/by-sa.png" width="30%" height="30%" style="display: block; margin: auto;" />
+
+
+Dieses Tutorial wurde mit Hilfe von <a href="https://bookdown.org/" target="_blank">Bookdown</a> für <a href="https://www.r-project.org/" target="_blank">R</a> geschrieben und publiziert. Es ist lizenziert unter CC-BY-SA und kann gerne mit Quellenangabe weitergegeben und adaptiert werden.
+
+Zitiervorschlag:Hartmann, Stefan. 2019. Einfache Korpusanalysen: Ein Schnelleinstieg. https://empirical-linguistics.github.io/korpus-schnelleinstieg/. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3246336.svg)](https://doi.org/10.5281/zenodo.3246336)
+
+
+

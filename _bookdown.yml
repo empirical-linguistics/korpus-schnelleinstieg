@@ -16,4 +16,6 @@ language:
     remark: 'Anm. '
     solution: 'Lösung '
 delete_merged_file: true
+new_session: true
 output_dir: "docs"
+
