@@ -13,18 +13,18 @@ Zur Erinnerung: Unsere Fragestellung lautet, ob bei prädikativem Gebrauch *vorp
 
 Konkret bedeutet das, dass wir für jeden Datenpunkt folgende Fragen beantworten müssen:
 
-1. Handelt es sich um eine prädikative Verwendung? - Schon ein kurzer Blick auf die Daten zeigt, dass sich notwendigerweise einige **Fehltreffer** eingeschlichen haben: Häufig finden sich z.B. Passivkonstruktionen wie *Es gibt jedoch medizinische Gründe, aus denen eine Geburt eingeleitet oder sogar programmiert werden muß*. Uns interessieren aber nur Fälle, in denen das Partizip selbst das Prädikat bildet, also z.B. *Der Computer ist programmiert* und *Die Katastrophe war vorprogrammiert*.
+1. Handelt es sich um eine prädikative Verwendung? – Schon ein kurzer Blick auf die Daten zeigt, dass sich notwendigerweise einige **Fehltreffer** eingeschlichen haben: Häufig finden sich z.B. Passivkonstruktionen wie *Es gibt jedoch medizinische Gründe, aus denen eine Geburt eingeleitet oder sogar programmiert werden muß*. Uns interessieren aber nur Fälle, in denen das Partizip selbst das Prädikat bildet, also z.B. *Der Computer ist programmiert* und *Die Katastrophe war vorprogrammiert*.
 
-2. Handelt es sich um eine metaphorische Verwendung? - Während beispielsweise Computer oder Roboter im wörtlichen Sinne programmiert werden, bezieht sich der Begriff bei Krisen und Katastrophen darauf, dass Voraussetzungen geschaffen wurden, die unausweichlich den thematisierten unschönen Ausgang zur Folge haben. Es liegt also ein metaphorischer Gebrauch vor, bei der Aspekte der Quelldomäne "Technik" auf eine abstraktere Zieldomäne übertragen werden. 
+2. Handelt es sich um eine metaphorische Verwendung? – Während beispielsweise Computer oder Roboter im wörtlichen Sinne programmiert werden, bezieht sich der Begriff bei Krisen und Katastrophen darauf, dass Voraussetzungen geschaffen wurden, die unausweichlich den thematisierten unschönen Ausgang zur Folge haben. Es liegt also ein metaphorischer Gebrauch vor, bei der Aspekte der Quelldomäne "Technik" auf eine abstraktere Zieldomäne übertragen werden. 
 
 In den nächsten Abschnitten wollen wir uns beiden Fragen etwas genauer zuwenden.
 
 
 ### Annotation prädikativ vs. nicht-prädikativ
 
-Wenn wir Daten annotieren, besteht eine wesentliche Herausforderung immer in der **Operationalisierung** konkreter Fragestellungen. In vielen Fällen ist es so, dass wir die Frage, die uns interessiert, auf den ersten Blick glauben für jeden Datenpunkt klar beantworten zu können. Bei genauerem Hinsehen ergeben sich dann aber doch einige Zweifelsfälle. So ist es auch hier: Um die Frage operationalisieren zu können, muss man zunächst einmal die Entscheidung treffen, ob man eine Struktur wie *Der Computer ist programmiert* als Zustandspassiv mit *sein* als Hilfsverb (analog zum Vorgangspassiv mit *werden* als Hilfsverb) oder als Konstruktion aus der Kopula *sein* und dem Partizip II *programmiert* interpretiert. Wir entscheiden uns hier für Letzteres. Jedoch zeigt dieses Beispiel: Wie wir Daten interpretieren, hängt oft genug von unserem theoretischen Zugang ab. Das ist nicht weiter schlimm, sondern liegt in der Natur der Sache - Wissenschaft kann nie ganz frei von Theorie und nie ganz frei von Interpretation sein. Wichtig ist, dass die Entscheidung, die wir treffen, sich gut begründen lässt und konsequent durchgehalten wird.
+Wenn wir Daten annotieren, besteht eine wesentliche Herausforderung immer in der **Operationalisierung** konkreter Fragestellungen. In vielen Fällen ist es so, dass wir die Frage, die uns interessiert, auf den ersten Blick für jeden Datenpunkt klar beantworten zu können glauben. Bei genauerem Hinsehen ergeben sich dann aber doch einige Zweifelsfälle. So ist es auch hier: Um die Frage operationalisieren zu können, muss man zunächst einmal die Entscheidung treffen, ob man eine Struktur wie *Der Computer ist programmiert* als Zustandspassiv mit *sein* als Hilfsverb (analog zum Vorgangspassiv mit *werden* als Hilfsverb) oder als Konstruktion aus der Kopula *sein* und dem Partizip II *programmiert* interpretiert. Wir entscheiden uns hier für Letzteres. Jedoch zeigt dieses Beispiel: Wie wir Daten interpretieren, hängt oft genug von unserem theoretischen Zugang ab. Das ist nicht weiter schlimm, sondern liegt in der Natur der Sache – Wissenschaft kann nie ganz frei von Theorie und nie ganz frei von Interpretation sein. Wichtig ist, dass die Entscheidung, die wir treffen, sich gut begründen lässt und konsequent durchgehalten wird.
 
-Wie setzen wir die Annotation nun in unserer Tabelle um? Auch hier zeige ich wieder Wege für [Excel][Umsetzung in Excel] und [Calc][Umsetzung in Calc]. Gerade die unten skizzierte Möglichkeit, Daten als "Tabelle" zu formatieren, finde ich persönlich an Excel sehr hilfreich, weshalb ich Excel i.d.R. bevorzuge. Allerdings halte ich es auch für wichtig, sich in der Wissenschaft nicht von proprietärer Software oder proprietären Datenformaten abhängig zu machen, und nicht jede Uni hat eine Office-Lizenz - deshalb zeige ich auch den Weg mit der freien Alternative auf.
+Wie setzen wir die Annotation nun in unserer Tabelle um? Auch hier zeige ich wieder Wege für [Excel][Umsetzung in Excel] und [Calc][Umsetzung in Calc]. Gerade die unten skizzierte Möglichkeit, Daten als "Tabelle" zu formatieren, finde ich persönlich an Excel sehr hilfreich, weshalb ich Excel i.d.R. bevorzuge. Allerdings halte ich es auch für wichtig, sich in der Wissenschaft nicht von proprietärer Software oder proprietären Datenformaten abhängig zu machen, und nicht jede Uni hat eine Office-Lizenz – deshalb zeige ich auch den Weg mit der freien Alternative auf.
 
 #### Umsetzung in Excel
 
@@ -35,7 +35,7 @@ Excel bietet die schöne Möglichkeit, Daten als Tabelle zu formatieren. Das ist
 Um die Belege im Kontext besser lesen zu können, empfiehlt es sich, zunächst ein paar Feinjustierungen in der Formatierung vorzunehmen. So können wir Spalten, die wir derzeit nicht benötigen (z.B. alle Spalten mit Metadaten), zunächst ausblenden. (Nicht löschen! Im Zweifelsfall nie Spalten löschen, wer weiß, wozu man sie später noch benötigt...) Außerdem kann es hilfreich sein, den Text in der Spalte mit dem linken Kontext rechtsbündig zu formatieren und die Breite der einzelnen Spalten so anzupassen, dass man den Beleg und ausreichend viel Kontext lesen kann und doch alle derzeit wichtigen Spalten gleichzeitig auf dem Bildschirm zu sehen sind. Wenn Sie die HTML-Version dieses Dokuments lesen, sehen Sie im weiteren Verlauf von Screencast \@ref(fig:excelastable) (nach der Formatierung der Daten als Tabelle), wie eine solche Feinjustierung aussehen kann.
 
 
-```{r excelastable, echo = FALSE, fig.cap="Formatierung als Tabelle und Hinzufügen einer Annotationsspalte \"praedikativ\""}
+```{r excelastable, echo = FALSE, fig.cap="Formatierung als Tabelle und Hinzufügen einer Annotationsspalte *praedikativ*"}
 
 if (knitr:::is_latex_output()) {
   knitr::include_graphics("docs/fig/excelastable01.png", dpi = 450)
@@ -85,7 +85,7 @@ Wenn wir nun den Filter herausnehmen, sehen wir, dass nun alle vorher leeren Zei
 
 #### Umsetzung in Calc
 
-In Calc empfiehlt es sich, zunächst einmal die Spaltenbreite anzupassen und nicht benötigte Spalten auszublenden (nicht löschen - im Zweifelsfall niemals Spalten oder Zeilen löschen, wer weiß, wofür man sie noch benötigt!). Ich selbst gehe in der Regel so vor, dass ich alle Spalten bis auf diejenigen mit den eigentlichen Belegen (linker Kontext, Treffer, rechter Kontext) ausblende und die Spalte mit dem linken Kontext so formatiere, dass der Text rechtsbündig angezeigt wird. So kann ich bequem den Beleg vom linken Kontext über den Treffer bis zum Keyword lesen. In der HTML-Version dieses Tutorials sehen Sie das in Screencast \@ref(fig:calcformat).
+In Calc empfiehlt es sich, zunächst einmal die Spaltenbreite anzupassen und nicht benötigte Spalten auszublenden (nicht löschen – im Zweifelsfall niemals Spalten oder Zeilen löschen, wer weiß, wofür man sie noch benötigt!). Ich selbst gehe in der Regel so vor, dass ich alle Spalten bis auf diejenigen mit den eigentlichen Belegen (linker Kontext, Treffer, rechter Kontext) ausblende und die Spalte mit dem linken Kontext so formatiere, dass der Text rechtsbündig angezeigt wird. So kann ich bequem den Beleg vom linken Kontext über den Treffer bis zum Keyword lesen. In der HTML-Version dieses Tutorials sehen Sie das in Screencast \@ref(fig:calcformat).
 
 
 ```{r calcformat, echo = FALSE, fig.cap="Formatierung der Tabelle in Calc und Setzen eines Filters"}
@@ -122,7 +122,7 @@ Damit ist die Spalte nun vollständig ausgefüllt.
 
 Für die weitere Annotation können wir die nicht-prädikativen Fälle außer Acht lassen. Hier können wir auf die oben erwähnten Filteroptionen zurückgreifen, um die nicht-prädikativen Fälle herauszufiltern.
 
-Nun gilt es, zu entscheiden, wann *programmiert* und *vorprogrammiert* metaphorisch verwendet werden und wann nicht. Auch das ist auf den ersten Blick denkbar einfach: Einen Computer oder einen Roboter kann man im wörtlichen Sinn programmieren, eine Katastrophe eher nicht - allenfalls indirekt, indem man z.B. Maschinen programmiert, die dann die Weltherrschaft übernehmen, siehe so ziemlich jede Dystopie von "Terminator" bis "Matrix". Aber genau dieses indirekte Programmieren bringt uns schon zu möglichen Zweifelsfällen: Was ist, wenn sich ein Satz wie *Die Konfrontation ist programmiert* auf einen Roboter bezieht?
+Nun gilt es, zu entscheiden, wann *programmiert* und *vorprogrammiert* metaphorisch verwendet werden und wann nicht. Auch das ist auf den ersten Blick denkbar einfach: Einen Computer oder einen Roboter kann man im wörtlichen Sinn programmieren, eine Katastrophe eher nicht – allenfalls indirekt, indem man z.B. Maschinen programmiert, die dann die Weltherrschaft übernehmen, siehe so ziemlich jede Dystopie von "Terminator" bis "Matrix". Aber genau dieses indirekte Programmieren bringt uns schon zu möglichen Zweifelsfällen: Was ist, wenn sich ein Satz wie *Die Konfrontation ist programmiert* auf einen Roboter bezieht?
 
 Solche Zweifelsfälle ergeben sich gerade bei einer im weitesten Sinne semantischen Annotation immer. Daher ist es wichtig, klare **Annotationsrichtlinien** zu formulieren, in der alle Annotationsentscheidungen genau dokumentiert sind. Oftmals entwickeln sich diese Richtlinien im Zuge der Annotation selbst, weil man über Daten stolpert, die man so zunächst nicht erwartet hätte. (Was übrigens ein gutes Argument dafür ist, sich bei der Analyse von Sprache nicht allein auf die eigene Intuition zu verlassen, sondern Korpusdaten zu Rate zu ziehen!)
 
@@ -156,7 +156,7 @@ Auch hierfür formulieren wir wieder Annotationskriterien:
 
 3. Lässt sich keine eindeutige Entscheidung treffen, bekommt der Beleg den Wert "unklar".
 
-In den .xlsx- und .odt-Dateien im <a href="https://github.com/empirical-linguistics/korpus-schnelleinstieg/tree/master/data" target="_blank">"data"-Ordner</a> habe ich das in der Spalte "Referenz" umgesetzt. Auch hier können Sie gern die Probe aufs Exempel machen und überprüfen, ob Ihre Annotationen mit meinen übereinstimmen. Wahrscheinlich werden Sie im einen oder anderen Fall andere Entscheidungen treffen als ich - das ist ganz normal und auch der Grund dafür, warum man idealerweise mindestens zwei Personen unabhängig voneinander annotieren lassen und dann die Annotationen vergleichen sollte. (De facto ist das natürlich gerade bei einer Seminararbeit häufig nicht möglich).
+In den .xlsx- und .odt-Dateien im <a href="https://github.com/empirical-linguistics/korpus-schnelleinstieg/tree/master/data" target="_blank">"data"-Ordner</a> habe ich das in der Spalte "Referenz" umgesetzt. Auch hier können Sie gern die Probe aufs Exempel machen und überprüfen, ob Ihre Annotationen mit meinen übereinstimmen. Wahrscheinlich werden Sie im einen oder anderen Fall andere Entscheidungen treffen als ich – das ist ganz normal und auch der Grund dafür, warum man idealerweise mindestens zwei Personen unabhängig voneinander annotieren lassen und dann die Annotationen vergleichen sollte. (De facto ist das natürlich gerade bei einer Seminararbeit häufig nicht möglich).
 
 
 
@@ -169,7 +169,7 @@ Nachdem wir nun die Daten annotiert haben, können wir unsere Annotationen quant
 
 Ideal für die Auswertung und Visualisierung in Excel ist die PivotTable-Funktion. Manches an dieser Funktion ist zunächst ein wenig gewöhnungsbedürftig, aber nach kurzer Eingewöhnungszeit ist sie doch halbwegs logisch und intuitiv. 
 
-Stellen Sie zunächst sicher, dass eine Zelle innerhalb der Tabelle angewählt ist (z.B. die Zelle ganz oben links). Jetzt klicken wir im Reiter "Einfügen" auf "PivotTable". Nun öffnet sich ein Fenster, in dem wir gefragt werden, welche Zellen Teil der PivotTable werden sollen (hier sollte Excel bereits automatisch erkannt haben, dass wir die ganze Tabelle einbeziehen wollen, sodass wir nichts mehr ändern müssen) und ob die Tabelle auf dem aktuellen oder einem neuen Arbeitsblatt erstellt werden soll - es empfiehlt sich, sie auf einem neuen Arbeitsblatt zu erstellen, was auch die Default-Option ist. Also können wir einfach OK klicken. In der HTML-Version dieses Tutorials können Sie die einzelnen Schritte in Screencast \@ref(fig:excelpivot) nachverfolgen.
+Stellen Sie zunächst sicher, dass eine Zelle innerhalb der Tabelle angewählt ist (z.B. die Zelle ganz oben links). Jetzt klicken wir im Reiter "Einfügen" auf "PivotTable". Nun öffnet sich ein Fenster, in dem wir gefragt werden, welche Zellen Teil der PivotTable werden sollen (hier sollte Excel bereits automatisch erkannt haben, dass wir die ganze Tabelle einbeziehen wollen, sodass wir nichts mehr ändern müssen) und ob die Tabelle auf dem aktuellen oder einem neuen Arbeitsblatt erstellt werden soll – es empfiehlt sich, sie auf einem neuen Arbeitsblatt zu erstellen, was auch die Default-Option ist. Also können wir einfach OK klicken. In der HTML-Version dieses Tutorials können Sie die einzelnen Schritte in Screencast \@ref(fig:excelpivot) nachverfolgen.
 
 ```{r excelpivot, echo = FALSE, fig.cap="Erstellen einer Pivot-Tabelle in Excel."}
 
@@ -193,7 +193,7 @@ knitr::include_graphics("docs/fig/excel_simplepivot.png", dpi = 300)
 
 Die Logik ist also ganz einfach: Was im Feld "Spalten" steht, taucht in den Spalten der Tabelle auf, was im Feld "Zeilen" steht, taucht in den Zeilen auf, und was im Feld "Werte" steht, das wird ausgezählt^[bzw. bei numerischen Werten aufsummiert; hier muss man ggf. aufpassen, dass die richtige Operation gewählt ist. Durch Klick auf das kleine Info-Symbol in den Feldern kann man das bei Bedarf anpassen]. Mit Hilfe des Felds "Filter" kann man die Daten bei Bedarf filtern.
 
-In unserem Beispiel wollen wir genau das tun: Wir wollen ja nur die prädikativ gebrauchten Instanzen von *(vor)programmiert* berücksichtigen. leeren wir die beiden Felder zunächst wieder, indem wir "Hit" aus dem jeweiligen Feld in das Fenster rechts oben ziehen (Fig. \@ref(fig:countofhit)). 
+In unserem Beispiel wollen wir genau das tun: Wir wollen ja nur die prädikativ gebrauchten Instanzen von *(vor)programmiert* berücksichtigen. Leeren wir die beiden Felder zunächst wieder, indem wir "Hit" aus dem jeweiligen Feld in das Fenster rechts oben ziehen (Fig. \@ref(fig:countofhit)). 
 
 ```{r countofhit, echo = FALSE, fig.cap="Entfernen einer Spalte aus dem \"Werte\"-Feld."}
 
@@ -217,7 +217,7 @@ Nun wollen wir eine tabellarische Übersicht über die Lesarten und die Referenz
 - Die Spalte "Referenz" enthält die Information darüber, ob der jeweilige Beleg auf das Objekt des Programmiervorgangs oder dessen Resultat referiert.
 - Die Spalte "Hit" enthält die Variante des Treffers.
 
-Zur Auswertung müssen wir die drei Spalten nun sinnvoll auf die "Zeilen"- und "Spalten"-Felder verteilen und zudem angeben, was ausgezählt werden soll. Hier gibt es mehrere Möglichkeiten; eine davon ist in \@ref(fig:excelfilter) dargestellt: In den Spalten werden die Daten nach Variante ("Hit") ausgewertet, in den Zeilen zum einen nach Lesart, zum anderen nach Referenz. Ausgezählt wird die Spalte "Lesart" - genauso gut könnten wir aber auch die Spalte "Referenz" auszählen, die Ergebnisse wären die gleichen, da ja beide Variablen in der Tabelle berücksichtigt sind.
+Zur Auswertung müssen wir die drei Spalten nun sinnvoll auf die "Zeilen"- und "Spalten"-Felder verteilen und zudem angeben, was ausgezählt werden soll. Hier gibt es mehrere Möglichkeiten; eine davon ist in \@ref(fig:excelfilter) dargestellt: In den Spalten werden die Daten nach Variante ("Hit") ausgewertet, in den Zeilen zum einen nach Lesart, zum anderen nach Referenz. Ausgezählt wird die Spalte "Lesart" – genauso gut könnten wir aber auch die Spalte "Referenz" auszählen, die Ergebnisse wären die gleichen, da ja beide Variablen in der Tabelle berücksichtigt sind.
 
 ```{r excelfilter, echo = FALSE, fig.cap="Tabellarische Auswertung der Korpusdaten mit Hilfe der PivotTable-Funktion."}
 
@@ -248,7 +248,7 @@ knitr::include_graphics("docs/fig/excel_pivotchartfields.png", dpi=400)
 
 ```
 
-Und noch etwas Feinjustierung: Damit die Grafik nicht so asymmetrisch aussieht wie Fig. \@ref(fig:asymmetric), werden (im ersten Schritt in \@ref(fig:excelvisualize)) zunächst die Feldeinstellungen so verändert, dass auch Felder mit Null-Werten angezeigt werden. Anschließend wird ein Balkendiagramm ausgewählt, das den prozentualen Anteil der jeweiligen Variante darstellt. Durch Rechtsklick auf die Balken kann man außerdem noch "Data Labels" hinzufügen, d.h. die absoluten Werte in den Balken darstellen lassen. Das ist empfehlenswert, weil so die Leserin oder der Leser schnell einen Eindruck gewinnen kann, wie groß die Datenbasis ist, auf der die Darstellung basiert - denn es macht ja schon einen gewichtigen Unterschied, ob eine Verteilung wie, sagen wir 10% : 90% auf zehn, auf hundert oder auf tausend Datenpunkten basiert! Die "Data Labels" kann man hinzufügen durch Rechtsklick auf die Balken und Klick auf den Punkt "Show data labels". 
+Und noch etwas Feinjustierung: Damit die Grafik nicht so asymmetrisch aussieht wie Fig. \@ref(fig:asymmetric), werden (im ersten Schritt in \@ref(fig:excelvisualize)) zunächst die Feldeinstellungen so verändert, dass auch Felder mit Null-Werten angezeigt werden. Anschließend wird ein Balkendiagramm ausgewählt, das den prozentualen Anteil der jeweiligen Variante darstellt. Durch Rechtsklick auf die Balken kann man außerdem noch "Data Labels" hinzufügen, d.h. die absoluten Werte in den Balken darstellen lassen. Das ist empfehlenswert, weil so die Leserin oder der Leser schnell einen Eindruck gewinnen kann, wie groß die Datenbasis ist, auf der die Darstellung basiert – denn es macht ja schon einen gewichtigen Unterschied, ob eine Verteilung wie, sagen wir 10% : 90% auf zehn, auf hundert oder auf tausend Datenpunkten basiert! Die "Data Labels" kann man hinzufügen durch Rechtsklick auf die Balken und Klick auf den Punkt "Show data labels". 
  
 ```{r asymmetric, echo = FALSE, fig.cap="Balkendiagramm, in dem nicht belegte Variablenausprägungen ausgelassen werden."}
 
@@ -302,7 +302,7 @@ if (knitr:::is_latex_output()) {
 ```
 
 
-Zuletzt wollen wir die Balken noch mit Labels versehen, d.h. wir wollen die absoluten Werte auf den Balken anzeigen. Auch hier kann Excel etwas mehr als Calc, und wir müssen etwas tricksen, um die absoluten Werte anzeigen zu lassen. Mit Rechtsklick auf einen der Balken > Insert Data Labels können wir zunächst die Labels anzeigen lassen, sehen aber erstens keine absoluten Werte, sondern Prozentwerte, und zweitens absurde Prozentwerte, weil Calc offenbar die Zahlen in der Tabelle für relative Werte hält. Mit Doppelklick auf eines der Labels können wir jedoch das Zahlenformat ändern und angeben, dass wir die Labels einfach als "Text" angezeigt bekommen wollen - also einfach das, was in der Pivot-Tabelle selbst steht (s. Fig. \@ref(fig:calcdatalabels)).
+Zuletzt wollen wir die Balken noch mit Labels versehen, d.h. wir wollen die absoluten Werte auf den Balken anzeigen. Auch hier kann Excel etwas mehr als Calc, und wir müssen etwas tricksen, um die absoluten Werte anzeigen zu lassen. Mit Rechtsklick auf einen der Balken > Insert Data Labels können wir zunächst die Labels anzeigen lassen, sehen aber erstens keine absoluten Werte, sondern Prozentwerte, und zweitens absurde Prozentwerte, weil Calc offenbar die Zahlen in der Tabelle für relative Werte hält. Mit Doppelklick auf eines der Labels können wir jedoch das Zahlenformat ändern und angeben, dass wir die Labels einfach als "Text" angezeigt bekommen wollen – also einfach das, was in der Pivot-Tabelle selbst steht (s. Fig. \@ref(fig:calcdatalabels)).
 
 
 ```{r calcdatalabels, echo = FALSE, fig.cap="Einfügen von Data labels in Calc."}
