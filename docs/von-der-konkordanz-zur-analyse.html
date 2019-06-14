@@ -222,7 +222,7 @@ Fig. 3.6: Erstellen einer Pivot-Tabelle in Excel.
 </div>
 <p>Nun öffnet sich ein neues Arbeitsblatt (mit den Reitern unten können Sie zwischen den Arbeitsblättern navigieren und ihnen ggf. auch aussagekräftigere Namen geben). Wir sehen ein dreigeteiltes Fenster. Im Arbeitsblatt selbst finden wir ein etwas kryptisch aussehendes, noch weitgehend leeres Feld mit einer Beschriftung wie “PivotTable1” o.ä. Das ist quasi der Platzhalter für die noch zu erstellende Tabelle. Rechts sehen wir oben eine Aufstellung der Namen der Tabellenspalten, unten sehen wir ein wiederum viergeteiltes Fenster. In die vier Felder in diesem Fenster können wir nun ausgewählte Spaltennamen aus dem Fenster oben rechts ziehen. Probieren Sie doch einmal, die Spalte “Hit” in das Feld “Zeilen” zu ziehen. Jetzt sehen Sie in der Pivot-Tabelle die beiden Zeilen “programmiert” und “vorprogrammiert”. Höchstwahrscheinlich ist “Hit” auch automatisch im Fenster “Werte” unten rechts aufgetaucht. Deshalb wird Ihnen in der Pivot-Tabelle auch die Häufigkeit der beiden Varianten angezeigt, wie in <a href="von-der-konkordanz-zur-analyse.html#fig:excelpivotsimple">3.7</a>.</p>
 <div class="figure"><span id="fig:excelpivotsimple"></span>
-<img src="docs/fig/excel_simplepivot.png" alt="Eine Pivot-Tabelle in Excel." width="107" />
+<img src="docs/fig/excel_simplepivot.png" alt="Eine Pivot-Tabelle in Excel."  />
 <p class="caption">
 Fig. 3.7: Eine Pivot-Tabelle in Excel.
 </p>
@@ -230,14 +230,14 @@ Fig. 3.7: Eine Pivot-Tabelle in Excel.
 <p>Die Logik ist also ganz einfach: Was im Feld “Spalten” steht, taucht in den Spalten der Tabelle auf, was im Feld “Zeilen” steht, taucht in den Zeilen auf, und was im Feld “Werte” steht, das wird ausgezählt<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. Mit Hilfe des Felds “Filter” kann man die Daten bei Bedarf filtern.</p>
 <p>In unserem Beispiel wollen wir genau das tun: Wir wollen ja nur die prädikativ gebrauchten Instanzen von <em>(vor)programmiert</em> berücksichtigen. Leeren wir die beiden Felder zunächst wieder, indem wir “Hit” aus dem jeweiligen Feld in das Fenster rechts oben ziehen (Fig. <a href="von-der-konkordanz-zur-analyse.html#fig:countofhit">3.8</a>).</p>
 <div class="figure"><span id="fig:countofhit"></span>
-<img src="docs/fig/countofhit.png" alt="Entfernen einer Spalte aus dem &quot;Werte&quot;-Feld." width="610" />
+<img src="docs/fig/countofhit.png" alt="Entfernen einer Spalte aus dem &quot;Werte&quot;-Feld."  />
 <p class="caption">
 Fig. 3.8: Entfernen einer Spalte aus dem “Werte”-Feld.
 </p>
 </div>
 <p>Dann ziehen wir die Spalte “prädikativ” in das Feld “Filter”. Jetzt können wir im Fenster links die nicht-prädikativen Daten herausfiltern (s. Fig. <a href="von-der-konkordanz-zur-analyse.html#fig:praedikativfilter">3.9</a>).</p>
 <div class="figure"><span id="fig:praedikativfilter"></span>
-<img src="docs/fig/praedikativ_filter.png" alt="Herausfiltern der Daten mit &quot;praedikativ=n&quot;." width="603" />
+<img src="docs/fig/praedikativ_filter.png" alt="Herausfiltern der Daten mit &quot;praedikativ=n&quot;."  />
 <p class="caption">
 Fig. 3.9: Herausfiltern der Daten mit “praedikativ=n”.
 </p>
@@ -250,7 +250,7 @@ Fig. 3.9: Herausfiltern der Daten mit “praedikativ=n”.
 </ul>
 <p>Zur Auswertung müssen wir die drei Spalten nun sinnvoll auf die “Zeilen”- und “Spalten”-Felder verteilen und zudem angeben, was ausgezählt werden soll. Hier gibt es mehrere Möglichkeiten; eine davon ist in <a href="von-der-konkordanz-zur-analyse.html#fig:excelfilter">3.10</a> dargestellt: In den Spalten werden die Daten nach Variante (“Hit”) ausgewertet, in den Zeilen zum einen nach Lesart, zum anderen nach Referenz. Ausgezählt wird die Spalte “Lesart” – genauso gut könnten wir aber auch die Spalte “Referenz” auszählen, die Ergebnisse wären die gleichen, da ja beide Variablen in der Tabelle berücksichtigt sind.</p>
 <div class="figure"><span id="fig:excelfilter"></span>
-<img src="docs/fig/excel_allfilters.png" alt="Tabellarische Auswertung der Korpusdaten mit Hilfe der PivotTable-Funktion." width="611" />
+<img src="docs/fig/excel_allfilters.png" alt="Tabellarische Auswertung der Korpusdaten mit Hilfe der PivotTable-Funktion."  />
 <p class="caption">
 Fig. 3.10: Tabellarische Auswertung der Korpusdaten mit Hilfe der PivotTable-Funktion.
 </p>
@@ -265,14 +265,14 @@ Fig. 3.11: Erstellen eines Balkendiagramms aus einer Pivot-Tabelle in Excel.
 </div>
 <p>Welche Daten auf der x- und auf der y-Achse dargestellt und welche innerhalb der Balken farblich kodiert werden, hängt davon ab, welche Daten in der Pivot-Tabelle in den Zeilen und in den Spalten stehen. Gegebenenfalls kann man hier noch ein paar Änderungen vornehmen, um die Darstellung sinnvoller zu gestalten. So entsteht in Fig. <a href="von-der-konkordanz-zur-analyse.html#fig:excelvisualize">3.11</a> ein Diagramm, bei dem die Variante (<em>programmiert</em> vs. <em>vorprogrammiert</em>) farblich kodiert wird. Das ist nicht unbedingt sinnvoll, weil wir ja wissen wollen, wie sich die Verteilung der unterschiedlichen Lesarten zwischen den beiden Varianten unterscheidet. Man kann die visuelle Darstellung auch in dem “Pivot Chart Fields”-Feld ändern, das sich bei der Erstellung des Balkendiagramms geöffnet haben dürfte (<a href="von-der-konkordanz-zur-analyse.html#fig:pivotchartfields">3.12</a>).</p>
 <div class="figure"><span id="fig:pivotchartfields"></span>
-<img src="docs/fig/excel_pivotchartfields.png" alt="Der Dialog &quot;Pivot Chart Fields&quot; (rechts) erlaubt es, anzupassen, was wo in der Grafik dargestellt wird." width="431" />
+<img src="docs/fig/excel_pivotchartfields.png" alt="Der Dialog &quot;Pivot Chart Fields&quot; (rechts) erlaubt es, anzupassen, was wo in der Grafik dargestellt wird."  />
 <p class="caption">
 Fig. 3.12: Der Dialog “Pivot Chart Fields” (rechts) erlaubt es, anzupassen, was wo in der Grafik dargestellt wird.
 </p>
 </div>
 <p>Und noch etwas Feinjustierung: Damit die Grafik nicht so asymmetrisch aussieht wie Fig. <a href="von-der-konkordanz-zur-analyse.html#fig:asymmetric">3.13</a>, werden (im ersten Schritt in <a href="von-der-konkordanz-zur-analyse.html#fig:excelvisualize">3.11</a>) zunächst die Feldeinstellungen so verändert, dass auch Felder mit Null-Werten angezeigt werden. Anschließend wird ein Balkendiagramm ausgewählt, das den prozentualen Anteil der jeweiligen Variante darstellt. Durch Rechtsklick auf die Balken kann man außerdem noch “Data Labels” hinzufügen, d.h. die absoluten Werte in den Balken darstellen lassen. Das ist empfehlenswert, weil so die Leserin oder der Leser schnell einen Eindruck gewinnen kann, wie groß die Datenbasis ist, auf der die Darstellung basiert – denn es macht ja schon einen gewichtigen Unterschied, ob eine Verteilung wie, sagen wir 10% : 90% auf zehn, auf hundert oder auf tausend Datenpunkten basiert! Die “Data Labels” kann man hinzufügen durch Rechtsklick auf die Balken und Klick auf den Punkt “Show data labels”.</p>
 <div class="figure"><span id="fig:asymmetric"></span>
-<img src="docs/fig/excel_asymmetric.png" alt="Balkendiagramm, in dem nicht belegte Variablenausprägungen ausgelassen werden." width="319" />
+<img src="docs/fig/excel_asymmetric.png" alt="Balkendiagramm, in dem nicht belegte Variablenausprägungen ausgelassen werden."  />
 <p class="caption">
 Fig. 3.13: Balkendiagramm, in dem nicht belegte Variablenausprägungen ausgelassen werden.
 </p>
