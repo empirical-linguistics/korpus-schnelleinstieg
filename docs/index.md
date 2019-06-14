@@ -38,7 +38,7 @@ Ein letzter Hinweis: Da ich aus Gründen, die hier auszuführen zu viel Platz we
 
 Dieses Tutorial wurde mit Hilfe von <a href="https://bookdown.org/" target="_blank">Bookdown</a> für <a href="https://www.r-project.org/" target="_blank">R</a> geschrieben und publiziert. Es ist lizenziert unter CC-BY-SA und kann gerne mit Quellenangabe weitergegeben und adaptiert werden.
 
-Zitiervorschlag:Hartmann, Stefan. 2019. Einfache Korpusanalysen: Ein Schnelleinstieg. https://empirical-linguistics.github.io/korpus-schnelleinstieg/. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3246336.svg)](https://doi.org/10.5281/zenodo.3246336)
+**Zitiervorschlag:** Hartmann, Stefan. 2019. Einfache Korpusanalysen: Ein Schnelleinstieg. https://empirical-linguistics.github.io/korpus-schnelleinstieg/. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3246336.svg)](https://doi.org/10.5281/zenodo.3246336)
 
 
 
